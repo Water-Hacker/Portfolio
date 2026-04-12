@@ -56,6 +56,18 @@ const pillars = [
         tech: ['Solidity', 'Rust', 'Multi-Sig Auth', 'Cold Storage Logic', 'Cross-Chain Bridges'],
         redacted: true,
       },
+      {
+        id: 'CASE-BLOCKEARTH-001',
+        client: 'BlockEarth — blockearth.app',
+        year: '2025',
+        type: 'Decentralised Web3 App — ETH Smart Contract & Token Sale',
+        badge: 'LIVE',
+        badgeClass: 'badge-active',
+        detail:
+          'Built and deployed a fully decentralised Web3 application. Supports all wallet connections (MetaMask, WalletConnect, Coinbase Wallet, and more). Users purchase tokens directly with ETH through a Solidity smart contract that auto-forwards all received ETH to a designated custody wallet while issuing proportional tokens to buyers. Contract is time-locked with a 1-year operational window baked into the on-chain logic. Fully non-custodial, trustless, and permissionless.',
+        tech: ['Solidity', 'Smart Contracts', 'Web3.js', 'WalletConnect', 'MetaMask', 'ETH', 'Time-Lock Logic', 'Token Issuance', 'Web3 Frontend'],
+        link: 'https://blockearth.app/',
+      },
     ],
   },
   {

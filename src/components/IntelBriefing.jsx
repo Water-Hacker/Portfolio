@@ -33,8 +33,8 @@ const events = [
     entity: 'Independent / Classified',
     type: 'ACTIVE',
     description:
-      'FLAIRE EdTech App — LIVE at flaireapp.org. Built with Flutter, Dart, Firebase & Google Cloud. GUC School Management System deployed. Multi-chain escrow custody under NDA. Sovereign AI curriculum pipeline operational.',
-    impact: 'Live deployments. Active engineering. Expanding across markets.',
+      'FLAIRE EdTech App — LIVE at flaireapp.org. BlockEarth decentralised token sale platform — LIVE at blockearth.app (ETH smart contract, wallet connect, time-locked 1-year). GUC School Management System deployed. Multi-chain escrow custody under NDA.',
+    impact: 'Multiple live deployments. Active engineering across DeFi, EdTech, and AI.',
     status: 'ACTIVE',
     color: '#D4AF37',
   },
