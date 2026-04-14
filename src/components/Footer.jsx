@@ -1,6 +1,8 @@
+// ─── Imports ───────────────────────────────────────────────────────────
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
+// ─── Navigation Links Configuration ────────────────────────────────────
 const navLinks = [
   { label: 'Intel', href: '#intel' },
   { label: 'Infrastructure', href: '#infrastructure' },
@@ -10,15 +12,18 @@ const navLinks = [
   { label: 'PGP', href: '#pgp' },
 ]
 
+// ─── Footer Component ──────────────────────────────────────────────────
 export default function Footer() {
   const [emailCopied, setEmailCopied] = useState(false)
 
+  // ─ Copy email to clipboard ────────────────────────────────────────────
   const copyEmail = () => {
     navigator.clipboard.writeText('thuram@thuramnana.com')
     setEmailCopied(true)
     setTimeout(() => setEmailCopied(false), 2000)
   }
 
+  // ─ Smooth scroll to section ───────────────────────────────────────────
   const handleNav = (href) => {
     const el = document.querySelector(href)
     if (el) el.scrollIntoView({ behavior: 'smooth' })
@@ -28,7 +33,7 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="relative border-t border-[#00E5FF]/10 bg-[#050505]">
-      {/* Top section */}
+      {/* Top section — 3 column layout */}
       <div className="max-w-6xl mx-auto px-6 py-16 grid sm:grid-cols-3 gap-12">
         {/* Brand col */}
         <div className="space-y-5">
@@ -50,7 +55,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* OPSEC notice */}
+          {/* OPSEC notice box */}
           <div className="border border-[#00E5FF]/10 p-3" style={{ background: 'rgba(0,229,255,0.02)' }}>
             <div className="font-mono text-[8px] text-[#00E5FF]/40 tracking-widest uppercase mb-1">⬡ OPSEC NOTICE</div>
             <p className="font-mono text-[8px] text-[#e0e0e0]/30 leading-relaxed">
@@ -134,7 +139,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
+      {/* Bottom bar — copyright & status */}
       <div className="border-t border-[#00E5FF]/08 px-6 py-5">
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
           <div className="font-mono text-[9px] text-[#e0e0e0]/25 tracking-widest">
@@ -155,6 +160,7 @@ export default function Footer() {
   )
 }
 
+// ─── FooterHex Component ──────────────────────────────────────────────
 function FooterHex() {
   const s = 28
   const cx = s / 2
