@@ -18,24 +18,29 @@ export default function App() {
   const handleComplete = useCallback(() => setBooted(true), [])
 
   return (
-    <div className="relative bg-[#050505] min-h-screen overflow-x-hidden">
-      {/* CRT scanline overlay */}
+    <div className="relative min-h-screen overflow-x-hidden" style={{ background: '#0A0C10' }}>
+      {/* Animated mesh gradient — slow, ambient */}
+      <div className="mesh-bg fixed inset-0 pointer-events-none z-0" />
+
+      {/* CRT scanline overlay — subtle texture over glass */}
       <div className="crt-overlay" />
 
       {/* Main app — always mounted, never unmounted */}
       <ErrorBoundary>
-        <Navbar />
-        <main>
-          <Hero />
-          <TechArsenal />
-          <IntelBriefing />
-          <Infrastructure />
-          <Library />
-          <Vault />
-          <Mentorship />
-          <PGP />
-        </main>
-        <Footer />
+        <div className="relative z-10">
+          <Navbar />
+          <main>
+            <Hero />
+            <TechArsenal />
+            <IntelBriefing />
+            <Infrastructure />
+            <Library />
+            <Vault />
+            <Mentorship />
+            <PGP />
+          </main>
+          <Footer />
+        </div>
       </ErrorBoundary>
 
       {/* Boot screen overlays everything until complete */}

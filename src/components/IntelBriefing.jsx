@@ -1,6 +1,8 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
+const EASE = [0.22, 1, 0.36, 1]
+
 const events = [
   {
     year: '2024',
@@ -43,37 +45,35 @@ const events = [
 function SectionLabel({ number, label }) {
   return (
     <div className="flex items-center gap-4 mb-16">
-      <span className="font-mono text-[10px] text-[#00E5FF]/50 tracking-[0.4em]">{number}</span>
-      <div className="flex-1 h-px bg-gradient-to-r from-[#00E5FF]/30 to-transparent" />
-      <span className="font-mono text-[10px] text-[#00E5FF]/50 tracking-[0.4em] uppercase">{label}</span>
+      <span className="font-mono text-[10px] text-[#3b82f6]/50 tracking-[0.4em]">{number}</span>
+      <div className="flex-1 h-px section-label-line" />
+      <span className="font-mono text-[10px] text-[#3b82f6]/50 tracking-[0.4em] uppercase">{label}</span>
     </div>
   )
 }
 
 export default function IntelBriefing() {
-  const ref = useRef(null)
+  const ref    = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
     <section id="intel" ref={ref} className="relative py-32 px-6 terminal-grid">
-      {/* Top section divider */}
       <div className="section-divider mb-0" />
 
       <div className="max-w-5xl mx-auto">
         <SectionLabel number="// 01" label="Intelligence Briefing" />
 
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.7, ease: EASE }}
           className="mb-20"
         >
           <h2 className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
             Timeline of{' '}
             <span
               style={{
-                background: 'linear-gradient(135deg, #00E5FF, #0080FF)',
+                background: 'linear-gradient(135deg, #3b82f6, #00E5FF)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
@@ -90,8 +90,10 @@ export default function IntelBriefing() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-[88px] top-0 bottom-0 w-px bg-gradient-to-b from-[#00E5FF]/40 via-[#D4AF37]/20 to-transparent hidden sm:block" />
-
+          <div
+            className="absolute left-[88px] top-0 bottom-0 w-px hidden sm:block"
+            style={{ background: 'linear-gradient(to bottom, rgba(59,130,246,0.4), rgba(212,175,55,0.2), transparent)' }}
+          />
           <div className="space-y-12">
             {events.map((ev, i) => (
               <TimelineEvent key={i} event={ev} index={i} inView={inView} />
@@ -105,30 +107,27 @@ export default function IntelBriefing() {
 
 function TimelineEvent({ event, index, inView }) {
   const typeColor = {
-    CRITICAL: '#ff6b6b',
+    CRITICAL:  '#ff6b6b',
     'ZERO-DAY': '#ff4444',
-    ACTIVE: '#D4AF37',
+    ACTIVE:    '#D4AF37',
   }[event.type] || '#00E5FF'
 
   const statusBadge = {
-    PATCHED: 'badge-active',
+    PATCHED:   'badge-active',
     UNPATCHED: 'badge-zero-day',
-    ACTIVE: 'badge-classified',
+    ACTIVE:    'badge-classified',
   }[event.status] || 'badge-active'
 
   return (
     <motion.div
-      initial={{ opacity: 0, x: -30 }}
-      animate={inView ? { opacity: 1, x: 0 } : {}}
-      transition={{ duration: 0.7, delay: index * 0.15 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.7, delay: index * 0.15, ease: EASE }}
       className="flex gap-8 items-start group"
     >
-      {/* Year */}
+      {/* Year column */}
       <div className="flex-shrink-0 w-[76px] text-right hidden sm:block">
-        <div
-          className="font-mono text-xs tracking-widest font-bold"
-          style={{ color: event.color }}
-        >
+        <div className="font-mono text-xs tracking-widest font-bold" style={{ color: event.color }}>
           {event.year}
         </div>
         <div className="font-mono text-[9px] text-[#e0e0e0]/30 mt-1">{event.code}</div>
@@ -139,8 +138,8 @@ function TimelineEvent({ event, index, inView }) {
         <div
           className="relative w-3 h-3 rounded-full border-2"
           style={{
-            borderColor: event.color,
-            boxShadow: `0 0 8px ${event.color}60`,
+            borderColor:     event.color,
+            boxShadow:       `0 0 8px ${event.color}60`,
             backgroundColor: `${event.color}20`,
           }}
         >
@@ -153,13 +152,26 @@ function TimelineEvent({ event, index, inView }) {
         </div>
       </div>
 
-      {/* Card */}
-      <div className="flex-1 border border-[#00E5FF]/10 hover:border-[#00E5FF]/25 transition-all duration-500 p-5 relative group-hover:bg-[#00E5FF]/02"
-        style={{ background: 'rgba(5,5,5,0.8)' }}
+      {/* Glass card */}
+      <motion.div
+        className="flex-1 relative p-5 transition-all duration-500"
+        style={{
+          background:    'rgba(17,19,24,0.65)',
+          backdropFilter: 'blur(24px) saturate(180%)',
+          WebkitBackdropFilter: 'blur(24px) saturate(180%)',
+          border:        '1px solid rgba(255,255,255,0.07)',
+          borderRadius:  '16px',
+          boxShadow:     '0 8px 32px rgba(0,0,0,0.6)',
+        }}
+        whileHover={{
+          boxShadow: `0 0 0 1px ${event.color}25, 0 12px 40px rgba(0,0,0,0.8)`,
+          borderColor: `${event.color}20`,
+          transition: { ease: EASE },
+        }}
       >
-        {/* Corner accent */}
-        <div className="absolute top-0 left-0 w-4 h-4 border-t border-l" style={{ borderColor: event.color }} />
-        <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r" style={{ borderColor: event.color }} />
+        {/* Corner accents */}
+        <div className="absolute top-0 left-0 w-4 h-4 border-t border-l" style={{ borderColor: event.color, borderRadius: '16px 0 0 0' }} />
+        <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r" style={{ borderColor: event.color, borderRadius: '0 0 16px 0' }} />
 
         {/* Mobile year */}
         <div className="sm:hidden mb-3 flex items-center gap-3">
@@ -170,15 +182,10 @@ function TimelineEvent({ event, index, inView }) {
         {/* Header row */}
         <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
           <div>
-            <div
-              className="font-mono text-[9px] tracking-[0.3em] uppercase mb-1"
-              style={{ color: typeColor }}
-            >
+            <div className="font-mono text-[9px] tracking-[0.3em] uppercase mb-1" style={{ color: typeColor }}>
               {event.type} // {event.entity}
             </div>
-            <h3 className="font-sans font-semibold text-lg text-white leading-tight">
-              {event.title}
-            </h3>
+            <h3 className="font-sans font-semibold text-lg text-white leading-tight">{event.title}</h3>
           </div>
           <span className={`${statusBadge} font-mono text-[9px] px-2 py-1 tracking-widest uppercase flex-shrink-0`}>
             {event.status}
@@ -186,9 +193,7 @@ function TimelineEvent({ event, index, inView }) {
         </div>
 
         {/* Description */}
-        <p className="font-mono text-xs text-[#e0e0e0]/60 leading-relaxed mb-4">
-          {event.description}
-        </p>
+        <p className="font-mono text-xs text-[#e0e0e0]/60 leading-relaxed mb-4">{event.description}</p>
 
         {/* Impact */}
         <div className="flex items-start gap-2">
@@ -197,7 +202,7 @@ function TimelineEvent({ event, index, inView }) {
           </span>
           <span className="font-mono text-[10px] text-[#D4AF37]/80">{event.impact}</span>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   )
 }
