@@ -284,7 +284,7 @@ export default function Hero() {
               Lead System Architect
             </div>
             <div className="font-mono text-[#D4AF37]/60 text-sm tracking-[0.3em] uppercase">
-              Security Researcher &amp; Prompt Engineer
+              Security Researcher &amp; Agentic AI Engineer
             </div>
           </motion.div>
 

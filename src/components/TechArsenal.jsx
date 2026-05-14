@@ -32,7 +32,7 @@ const arsenal = [
 
 const tickerItems = [
   'Flutter','Dart','Firebase','React','Node.js','TypeScript',
-  'Python','Solidity','Rust','Google Cloud','Prompt Engineering',
+  'Python','Solidity','Rust','Google Cloud','Agentic AI Engineering',
   'Vulnerability Research','Multi-Sig Custody','Zero-Day Analysis',
   'LLM Orchestration','Agentic Coding','AI Architecture','DeFi Protocols',
 ]
