@@ -22,7 +22,7 @@ const arsenal = [
   },
   {
     id: 'AI', label: 'AI & Agentic Systems', color: '#D4AF37', icon: '◈',
-    tags: ['Prompt Engineering','LLM Orchestration','Agentic Coding','AI Curriculum Pipelines','Code Understanding','System Logic Generation','Model Chaining'],
+    tags: ['Agentic AI Engineering','LLM Orchestration','Agentic Coding','AI Curriculum Pipelines','Code Understanding','System Logic Generation','Model Chaining'],
   },
   {
     id: 'LANG', label: 'Languages', color: '#00E5FF', icon: '◇',
@@ -32,7 +32,7 @@ const arsenal = [
 
 const tickerItems = [
   'Flutter','Dart','Firebase','React','Node.js','TypeScript',
-  'Python','Solidity','Rust','Google Cloud','Prompt Engineering',
+  'Python','Solidity','Rust','Google Cloud','Agentic AI Engineering',
   'Vulnerability Research','Multi-Sig Custody','Zero-Day Analysis',
   'LLM Orchestration','Agentic Coding','AI Architecture','DeFi Protocols',
 ]

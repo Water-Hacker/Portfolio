@@ -37,7 +37,7 @@ const frameworks = [
       'Polyglot Engineering — Any Language, Any Stack',
       'Flutter / Dart Cross-Platform Mobile Architecture',
       'Agentic Coding & AI-Assisted System Design',
-      'Professional Prompt Engineering & LLM Orchestration',
+      'Professional Agentic AI Engineering & LLM Orchestration',
     ],
   },
 ]

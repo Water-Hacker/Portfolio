@@ -49,8 +49,8 @@ const pillars = [
       {
         id: 'CASE-FLAIRE-001', client: 'FLAIRE — flaireapp.org', year: '2025',
         type: 'AI-Powered EdTech Cross-Platform App', badge: 'LIVE', badgeClass: 'badge-active',
-        detail: 'Built and launched a full-stack AI-powered educational platform. Engineered cross-platform mobile with Flutter & Dart, Firebase backend for real-time data and auth, Google Cloud infrastructure for scalability. flaireapp.org is the official project website. Professional prompt engineering drives AI curriculum pipeline and system logic generation.',
-        tech: ['Flutter', 'Dart', 'Firebase', 'Google Cloud', 'Prompt Engineering', 'AI Architecture'],
+        detail: 'Built and launched a full-stack AI-powered educational platform. Engineered cross-platform mobile with Flutter & Dart, Firebase backend for real-time data and auth, Google Cloud infrastructure for scalability. flaireapp.org is the official project website. Professional Agentic AI Engineering drives AI curriculum pipeline and system logic generation.',
+        tech: ['Flutter', 'Dart', 'Firebase', 'Google Cloud', 'Agentic AI Engineering', 'AI Architecture'],
         link: 'https://www.flaireapp.org/',
       },
       {
