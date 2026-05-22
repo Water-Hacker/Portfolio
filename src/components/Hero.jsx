@@ -122,6 +122,8 @@ function HexSphere() {
   return (
     <canvas
       ref={canvasRef}
+      role="img"
+      aria-label="Animated hex-sphere representing the sovereign architecture lattice"
       width={480}
       height={480}
       className="w-full max-w-[480px] aspect-square"
@@ -193,6 +195,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
+      aria-labelledby="hero-h"
       className="relative min-h-screen flex items-center justify-center terminal-grid overflow-hidden"
     >
       {/* Radial accent — blue/indigo tint behind hero */}
@@ -257,7 +260,7 @@ export default function Hero() {
             <div className="font-mono text-[10px] text-[#3b82f6]/60 tracking-[0.4em] uppercase mb-3">
               IDENTITY_VERIFIED :: OPERATOR_NODE_001
             </div>
-            <h1 className="font-sans font-black leading-none tracking-tight">
+            <h1 id="hero-h" className="font-sans font-black leading-none tracking-tight">
               <span className="block text-5xl sm:text-6xl lg:text-7xl text-white">JUNIOR</span>
               <span
                 className="block text-5xl sm:text-6xl lg:text-7xl"

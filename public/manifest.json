@@ -1,0 +1,28 @@
+{
+  "name": "Junior Thuram Nana — Sovereign Architect",
+  "short_name": "Thuram Nana",
+  "description": "Junior Thuram Nana — Lead System Architect & Security Researcher. Building the sovereign technology stack: national infrastructure for Cameroon, vulnerability research, agentic AI engineering.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0A0C10",
+  "theme_color": "#0A0C10",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "developer", "security"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

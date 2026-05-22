@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Junior Thuram Nana — Sovereign Architect and Security Researcher">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0C10"/>
+      <stop offset="50%" stop-color="#0E1218"/>
+      <stop offset="100%" stop-color="#050708"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0A0C10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#3b82f6" stroke-opacity="0.08" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g transform="translate(880, 315)" opacity="0.55">
+    <g fill="none" stroke="#00E5FF" stroke-width="1.2">
+      <polygon points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11"/>
+    </g>
+    <g fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.7">
+      <polygon points="0,-78 67,-39 67,39 0,78 -67,39 -67,-39"/>
+    </g>
+    <g fill="none" stroke="#3b82f6" stroke-width="0.9" opacity="0.5">
+      <polygon points="0,-138 119,-69 119,69 0,138 -119,69 -119,-69"/>
+    </g>
+    <g fill="none" stroke="#4f46e5" stroke-width="0.7" opacity="0.3">
+      <polygon points="0,-198 171,-99 171,99 0,198 -171,99 -171,-99"/>
+    </g>
+    <g fill="#00E5FF" opacity="0.85">
+      <circle cx="0" cy="0" r="4"/>
+    </g>
+  </g>
+
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#3b82f6" opacity="0.55">
+    <text x="80" y="80" font-size="13" letter-spacing="6">// SOVEREIGN_ARCHITECTURE_v1.0</text>
+  </g>
+
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#00E5FF" opacity="0.85">
+    <text x="80" y="155" font-size="13" letter-spacing="5">IDENTITY_VERIFIED :: OPERATOR_NODE_001</text>
+  </g>
+
+  <g font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="900">
+    <text x="80" y="245" font-size="74" fill="#FFFFFF" letter-spacing="-1">JUNIOR</text>
+    <text x="80" y="320" font-size="74" fill="url(#cyan)" letter-spacing="-1">THURAM</text>
+    <text x="80" y="395" font-size="74" fill="url(#gold)" letter-spacing="-1">NANA</text>
+  </g>
+
+  <g font-family="'JetBrains Mono', ui-monospace, monospace">
+    <text x="80" y="445" font-size="17" letter-spacing="3" fill="#FFFFFF" opacity="0.7">SOVEREIGN ARCHITECT · SECURITY RESEARCHER</text>
+  </g>
+
+  <g font-family="'Inter', system-ui, sans-serif" fill="#FFFFFF" opacity="0.55">
+    <text x="80" y="495" font-size="20" font-weight="500">Agentic AI engineering — sovereign national infrastructure</text>
+    <text x="80" y="522" font-size="20" font-weight="500">VIGIL APEX · RÉCOR · MAMA · TraceCMR · Pattern · ANTIC</text>
+  </g>
+
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#D4AF37" opacity="0.6">
+    <text x="80" y="585" font-size="12" letter-spacing="4">THURAMNANA.COM • GITHUB.COM/WATER-HACKER</text>
+  </g>
+
+  <g stroke="#00E5FF" stroke-opacity="0.4" stroke-width="2" fill="none">
+    <path d="M 40 40 L 60 40 L 60 60"/>
+    <path d="M 1140 40 L 1160 40 L 1160 60"/>
+    <path d="M 40 590 L 40 570 L 60 570"/>
+    <path d="M 1160 590 L 1160 570 L 1140 570"/>
+  </g>
+
+  <g fill="#D4AF37" opacity="0.7">
+    <rect x="80" y="178" width="40" height="2"/>
+  </g>
+</svg>

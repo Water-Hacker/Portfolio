@@ -52,7 +52,7 @@ export default function TechArsenal() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="arsenal" ref={ref} className="relative py-32 px-6 terminal-grid">
+    <section id="arsenal" aria-labelledby="arsenal-h" ref={ref} className="relative py-32 px-6 terminal-grid">
       <div className="section-divider mb-0" />
 
       <div
@@ -71,7 +71,7 @@ export default function TechArsenal() {
           transition={{ duration: 0.7, ease: EASE }}
           className="mb-14"
         >
-          <h2 className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
+          <h2 id="arsenal-h" className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
             The{' '}
             <span
               style={{
@@ -92,6 +92,8 @@ export default function TechArsenal() {
 
         {/* Scrolling ticker */}
         <div
+          aria-label="Skills marquee"
+          aria-hidden="true"
           className="relative overflow-hidden mb-14 py-3"
           style={{ borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}
         >
@@ -137,7 +139,7 @@ export default function TechArsenal() {
 
 function ArsenalCard({ cat, index, inView }) {
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0, y: 24 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.55, delay: index * 0.07, ease: EASE }}
@@ -176,14 +178,14 @@ function ArsenalCard({ cat, index, inView }) {
           >
             {cat.id}
           </div>
-          <div className="font-sans font-semibold text-sm text-white">{cat.label}</div>
+          <h3 className="font-sans font-semibold text-sm text-white">{cat.label}</h3>
         </div>
       </div>
 
       {/* Tags */}
-      <div className="flex flex-wrap gap-1.5">
+      <ul role="list" className="flex flex-wrap gap-1.5">
         {cat.tags.map(tag => (
-          <span
+          <li
             key={tag}
             className="font-mono text-[9px] px-2 py-0.5 tracking-wide"
             style={{
@@ -194,9 +196,9 @@ function ArsenalCard({ cat, index, inView }) {
             }}
           >
             {tag}
-          </span>
+          </li>
         ))}
-      </div>
-    </motion.div>
+      </ul>
+    </motion.article>
   )
 }

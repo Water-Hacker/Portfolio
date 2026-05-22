@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
 
         {/* Nav col */}
-        <div>
+        <nav aria-label="Footer">
           <div className="font-mono text-[9px] text-[#00E5FF]/40 tracking-[0.4em] uppercase mb-5">
             NAVIGATION
           </div>
@@ -77,15 +77,15 @@ export default function Footer() {
                 onClick={() => handleNav(link.href)}
                 className="block font-mono text-[10px] text-[#e0e0e0]/40 hover:text-[#00E5FF] tracking-widest uppercase transition-colors duration-200 text-left"
               >
-                <span className="text-[#00E5FF]/20 mr-2">›</span>
+                <span className="text-[#00E5FF]/20 mr-2" aria-hidden="true">›</span>
                 {link.label}
               </button>
             ))}
           </div>
-        </div>
+        </nav>
 
         {/* Contact col */}
-        <div>
+        <address className="not-italic">
           <div className="font-mono text-[9px] text-[#00E5FF]/40 tracking-[0.4em] uppercase mb-5">
             SECURE CHANNEL
           </div>
@@ -97,6 +97,7 @@ export default function Footer() {
               <motion.button
                 onClick={copyEmail}
                 whileHover={{ x: 2 }}
+                aria-label="Copy email address thuram@thuramnana.com"
                 className="font-mono text-xs text-[#00E5FF]/80 hover:text-[#00E5FF] transition-colors track-wide break-all text-left"
               >
                 thuram@thuramnana.com
@@ -136,7 +137,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-        </div>
+        </address>
       </div>
 
       {/* Bottom bar — copyright & status */}

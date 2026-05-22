@@ -42,6 +42,7 @@ export default function Navbar() {
 
   return (
     <motion.nav
+      aria-label="Primary"
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: EASE, delay: 0.2 }}
@@ -90,6 +91,8 @@ export default function Navbar() {
 
         {/* Mobile menu button */}
         <motion.button
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
           className="md:hidden font-mono text-[#00E5FF] text-xs px-3 py-2 transition-all"
           style={{
             background: 'rgba(59,130,246,0.06)',
@@ -109,6 +112,8 @@ export default function Navbar() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
+            id="mobile-menu"
+            role="menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
@@ -148,6 +153,7 @@ function NavLink({ item, onClick, active }) {
   return (
     <motion.button
       onClick={() => onClick(item.href)}
+      aria-current={active ? 'page' : undefined}
       className="relative font-mono text-xs tracking-widest uppercase group"
       whileHover="hover"
     >

@@ -1,0 +1,39 @@
+/* TEAM */
+
+Lead System Architect & Security Researcher: Junior Thuram Nana
+Contact: thuram [at] thuramnana.com
+Domain: thuramnana.com
+PGP Fingerprint: C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C
+From: Cameroon
+
+/* THANKS */
+
+To the consortia, ministries, and partners advancing the sovereign technology stack.
+
+/* SITE */
+
+Last update: 2026-05-22
+Language: English / Français
+Doctype: HTML5
+IDE: agentic — Claude Code (Opus 4.7)
+Standards: HTML5, CSS3, ES2024, WCAG 2.2 AA aspirational
+
+/* TECHNOLOGY COLOPHON */
+
+Frontend: React, Vite, Tailwind CSS, Framer Motion
+Languages: JavaScript, TypeScript, Dart, Python, Solidity, Rust, Bash
+Mobile: Flutter / Dart
+Backend: Node.js, Flask, axum (Rust), Firebase, Postgres, Redis, Elasticsearch
+Blockchain: Solidity, Polygon, Hyperledger Fabric, Web3.js, WalletConnect
+Crypto: Ed25519, BLAKE3, FROST threshold signing, Halo2 zero-knowledge, RSA 4096 PGP
+Infra: Kubernetes, Helm, Caddy, HAProxy, PgBouncer, KEDA, Vault, SPIFFE/SPIRE
+Observability: Prometheus, Grafana, Tempo, Loki, OpenTelemetry, Pyrra SLOs
+Methodology: Professional Agentic AI Engineering — Claude Code (Opus 4.7) + specialist subagents
+Hosting: Netlify (portfolio), sovereign Cameroonian infrastructure (national platforms)
+
+                                                                __
+                                                               /  \
+                                                              /    \
+                                                             /______\
+                                                                \/
+                                                          SOVEREIGN STACK

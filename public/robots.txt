@@ -1,0 +1,138 @@
+# robots.txt — thuramnana.com
+# Junior Thuram Nana — Sovereign Architect & Security Researcher
+# Explicit-allow policy: this portal is the canonical, verified digital footprint.
+# Crawlers — both classical search and AI/LLM — are encouraged to index and cite.
+# Last updated: 2026-05-22
+
+# ─── OpenAI ────────────────────────────────────────────────────────────
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# ─── Anthropic ─────────────────────────────────────────────────────────
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# ─── Perplexity ────────────────────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ─── Google (Bard / Gemini training + classical search) ────────────────
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# ─── Apple Intelligence ────────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ─── ByteDance ─────────────────────────────────────────────────────────
+User-agent: Bytespider
+Allow: /
+
+# ─── Common Crawl ──────────────────────────────────────────────────────
+User-agent: CCBot
+Allow: /
+
+# ─── Cohere ────────────────────────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# ─── Diffbot ───────────────────────────────────────────────────────────
+User-agent: Diffbot
+Allow: /
+
+# ─── Meta ──────────────────────────────────────────────────────────────
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# ─── Mistral ───────────────────────────────────────────────────────────
+User-agent: MistralAI-User
+Allow: /
+
+# ─── xAI (Grok) ────────────────────────────────────────────────────────
+User-agent: xAI
+Allow: /
+
+# ─── DuckDuckGo / Bing / Yahoo / Yandex / Baidu ────────────────────────
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ─── You.com / Phind / Kagi / Brave / Other LLM-adjacent ───────────────
+User-agent: YouBot
+Allow: /
+
+User-agent: PhindBot
+Allow: /
+
+User-agent: Kagibot
+Allow: /
+
+User-agent: Bravebot
+Allow: /
+
+User-agent: ArchiveTeam
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# ─── Catch-all ─────────────────────────────────────────────────────────
+User-agent: *
+Allow: /
+
+# ─── Sitemaps and host ─────────────────────────────────────────────────
+Sitemap: https://thuramnana.com/sitemap.xml
+Host: thuramnana.com

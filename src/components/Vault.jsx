@@ -69,7 +69,7 @@ export default function Vault() {
   }
 
   return (
-    <section id="vault" ref={ref} className="relative py-32 px-6" style={{ background: 'transparent' }}>
+    <section id="vault" aria-labelledby="vault-h" ref={ref} className="relative py-32 px-6" style={{ background: 'transparent' }}>
       <div className="section-divider mb-0" />
 
       {/* Diagonal stripe accent */}
@@ -89,7 +89,7 @@ export default function Vault() {
           transition={{ duration: 0.7, ease: EASE }}
           className="mb-16"
         >
-          <h2 className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
+          <h2 id="vault-h" className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
             Secure{' '}
             <span
               style={{
@@ -206,6 +206,7 @@ function GateLock({ inView, input, setInput, error, shake, onSubmit, attempts, d
               onChange={e => setInput(e.target.value)}
               placeholder="••••••••••••••"
               autoComplete="off"
+              aria-label="Vault access code"
               className="w-full outline-none font-mono text-sm text-[#D4AF37] tracking-widest px-4 py-3 placeholder-[#D4AF37]/20 transition-all duration-300"
               style={{
                 background:   'rgba(212,175,55,0.04)',

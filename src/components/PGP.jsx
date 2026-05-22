@@ -57,7 +57,7 @@ export default function PGP() {
   }
 
   return (
-    <section id="pgp" ref={ref} className="relative py-32 px-6 terminal-grid">
+    <section id="pgp" aria-labelledby="pgp-h" ref={ref} className="relative py-32 px-6 terminal-grid">
       <div className="section-divider mb-0" />
 
       <div className="max-w-4xl mx-auto">
@@ -69,7 +69,7 @@ export default function PGP() {
           transition={{ duration: 0.7, ease: EASE }}
           className="mb-16"
         >
-          <h2 className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
+          <h2 id="pgp-h" className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
             PGP{' '}
             <span
               style={{

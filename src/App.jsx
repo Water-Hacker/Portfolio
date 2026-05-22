@@ -29,7 +29,7 @@ export default function App() {
       <ErrorBoundary>
         <div className="relative z-10">
           <Navbar />
-          <main>
+          <main id="main-content">
             <Hero />
             <TechArsenal />
             <IntelBriefing />
