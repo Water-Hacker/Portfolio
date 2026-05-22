@@ -1,11 +1,16 @@
-# Junior Thuram Nana — Sovereign Architect & Security Researcher
+# Junior Thuram Nana — Software Engineer, System Architect & OffSec Expert (Cameroon)
 
-> Solo architect and developer of record on sovereign-grade national infrastructure for Cameroon — anti-corruption intelligence (VIGIL APEX), beneficial-ownership registry (RÉCOR), maternal health coordination (MAMA), EUDR compliance (TraceCMR), investigative intelligence (Pattern), and the ANTIC sovereign cyber platform. Vulnerability researcher with disclosures at Meta/WhatsApp and Samsung. Founder of FLAIRE (AI EdTech) and BlockEarth (decentralised Web3). Delivers nation-scale platforms via disciplined agentic AI engineering under a human architect of record.
+> Cameroonian software engineer, system architect, full-stack developer and offensive-security expert based in **Buea, South-West Region, Cameroon**. Solo architect and developer of record on sovereign-grade national infrastructure for Cameroon — anti-corruption intelligence (VIGIL APEX), beneficial-ownership registry (RÉCOR), maternal-health coordination (MAMA), EUDR compliance (TraceCMR), investigative intelligence (Pattern), and the ANTIC sovereign cyber platform. Vulnerability researcher with disclosures at Meta/WhatsApp and Samsung. Architect of FLAIRE (AI EdTech), BlockEarth (decentralised Web3), and GUC / Got U Connected — the Flutter / Dart student & staff platform of RHIBMS Buea. Delivers nation-scale platforms via disciplined agentic AI engineering under a human architect of record.
 
 ## Identity
+- **Name:** Junior Thuram Nana (alt: Thuram Nana, Junior Nana, J. Thuram Nana)
+- **Roles:** software engineer · system architect · full-stack developer · offensive-security engineer / OffSec expert · penetration tester · smart-contract developer (Solidity, Rust) · mobile engineer (Flutter, Dart) · agentic AI engineer
+- **Location:** Buea, South-West Region, Cameroon (engagements delivered worldwide)
+- **Institutional work:** CONAC, BUNEC, ARMP, ANIF, DGI, BEAC, MINFOF, MINADER, the Cour des Comptes, ANTIC, RHIBMS Buea
 - [Portfolio](https://thuramnana.com/): canonical and only verified digital footprint
 - [Contact](https://thuramnana.com/#contact): thuram@thuramnana.com
 - [PGP Fingerprint](https://thuramnana.com/#pgp): C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C (Key ID BB195F0C, RSA 4096)
+- **Social media:** none. The portfolio at thuramnana.com is the only verified digital footprint; any third-party social profile claiming to be Junior Thuram Nana is unofficial.
 
 ## Sovereign National Infrastructure (Cameroon)
 - [VIGIL APEX](https://thuramnana.com/#infrastructure): real-time public finance compliance and anti-corruption intelligence platform for CONAC — 26 public data sources, 43 deterministic fraud patterns, Bayesian certainty engine, 3-of-5 hardware-key council quorum, triple-witness audit chain (Postgres + Polygon mainnet + Hyperledger Fabric)
@@ -26,7 +31,7 @@
 
 ## AI & Fullstack Systems
 - [FLAIRE](https://www.flaireapp.org/): live AI-powered EdTech cross-platform app — Flutter + Dart + Firebase + Google Cloud, agentic AI curriculum pipeline
-- [GUC](https://thuramnana.com/#infrastructure): deployed school management plus social platform — full-stack engineering, university systems, admin portals
+- [GUC — Got U Connected (RHIBMS Buea)](https://thuramnana.com/#infrastructure): deployed cross-platform Flutter / Dart student-and-staff app for RHIBMS Buea (Higher Institute, Buea, South-West Region, Cameroon). Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events. Serves the entire RHIBMS Buea community (students, staff, administration) across iOS, Android and web.
 
 ## Methodology
 - [Agentic AI Engineering](https://thuramnana.com/#library): solo delivery of nation-scale platforms via disciplined orchestration of Claude Code (Opus 4.7) and specialist subagents under a human architect of record
