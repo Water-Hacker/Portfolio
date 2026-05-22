@@ -19,8 +19,8 @@ on:
   push:
     branches: [main]
   schedule:
-    # Tuesdays 09:13 UTC — quiet hour, post-weekend crawl window
-    - cron: '13 9 * * 2'
+    # Daily at 09:13 UTC — keeps the index fresh even with no commits
+    - cron: '13 9 * * *'
   workflow_dispatch:
 
 permissions:
@@ -47,14 +47,30 @@ jobs:
 
       - name: ping PubSubHubbub (Atom feed propagation)
         run: |
-          curl -fsSL --max-time 15 -X POST \
-            -d "hub.mode=publish" \
-            -d "hub.url=https://thuramnana.com/feed.xml" \
-            https://pubsubhubbub.appspot.com/ || true
-          curl -fsSL --max-time 15 -X POST \
-            -d "hub.mode=publish" \
-            -d "hub.url=https://thuramnana.com/feed.xml" \
-            https://websub.io/hub || true
+          for hub in \
+            https://pubsubhubbub.appspot.com/ \
+            https://pubsubhubbub.superfeedr.com/ \
+            https://websub.io/hub \
+            https://websubhub.com/hub \
+            https://websub.rocks/hub; do
+            curl -fsSL --max-time 15 -X POST \
+              -d "hub.mode=publish" \
+              -d "hub.url=https://thuramnana.com/feed.xml" \
+              "$hub" || true
+          done
+
+      - name: fan-out ping to classical search engines
+        run: |
+          # Most engines deprecated the GET-ping endpoint between 2023-2024,
+          # but they are still harmless to call and a few aggregators honour them.
+          for url in \
+            "https://www.bing.com/ping?sitemap=https://thuramnana.com/sitemap.xml" \
+            "https://yandex.com/ping?sitemap=https://thuramnana.com/sitemap.xml" \
+            "https://blogsearch.google.com/ping/RPC2" \
+            "https://rpc.pingomatic.com/" \
+            "https://ping.feedburner.com/"; do
+            curl -fsSL --max-time 10 -o /dev/null -w "[ping] %{http_code} ${url}\n" "${url}" || true
+          done
 
       - name: warm CDN cache for indexable surfaces
         run: |

@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.mjs",
-    "build:fast": "vite build",
+    "build": "node scripts/update-lastmod.mjs && vite build && node scripts/prerender.mjs",
+    "build:fast": "node scripts/update-lastmod.mjs && vite build",
     "prerender": "node scripts/prerender.mjs",
     "preview": "vite preview",
+    "lastmod": "node scripts/update-lastmod.mjs",
     "indexnow": "node scripts/indexnow-ping.mjs"
   },
   "dependencies": {
