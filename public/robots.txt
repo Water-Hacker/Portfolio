@@ -136,3 +136,21 @@ Allow: /
 # ─── Sitemaps and host ─────────────────────────────────────────────────
 Sitemap: https://thuramnana.com/sitemap.xml
 Host: thuramnana.com
+
+# ─── AI / LLM context pointers ─────────────────────────────────────────
+# Per the Answer.AI llms.txt convention (https://llmstxt.org/), the
+# following file gives LLMs a concise, structured map of the site.
+# llms-full.txt extends this with the full corpus.
+# These references are advisory; both files are also linked from
+# index.html via <link rel="alternate"> and surfaced in sitemap.xml.
+
+# Canonical AI-readable manifest:
+# https://thuramnana.com/llms.txt
+# https://thuramnana.com/llms-full.txt
+# https://thuramnana.com/feed.xml
+
+# ─── IndexNow proof key ────────────────────────────────────────────────
+# Bing / Yandex / Naver / Seznam fetch this URL to verify ownership before
+# accepting URL submissions via the IndexNow API.
+# https://thuramnana.com/thuramnana-2026-sovereign-indexnow-key-1a7b9c3d5e7f9a1b3c5d7e9f1a3b5c7d.txt
+

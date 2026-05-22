@@ -13,8 +13,14 @@ import Footer from './components/Footer'
 import BootSequence from './components/BootSequence'
 import TechArsenal from './components/TechArsenal'
 
+// Skip boot in prerender (Puppeteer sets window.__PRERENDER__ before mount) and for crawlers.
+const IS_PRERENDER = typeof window !== 'undefined' && (
+  window.__PRERENDER__ === true ||
+  /HeadlessChrome|Prerender|Lighthouse|Googlebot|Bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot|Sogou|Exabot|facebot|ia_archiver|GPTBot|ClaudeBot|PerplexityBot|OAI-SearchBot|anthropic-ai|Google-Extended|Applebot-Extended|CCBot|Bytespider|MistralAI-User|MetaInspector|LinkedInBot|WhatsApp|Twitterbot|Slackbot|TelegramBot|Discordbot|SkypeUriPreview|MetaInspector/i.test(navigator.userAgent)
+)
+
 export default function App() {
-  const [booted, setBooted] = useState(false)
+  const [booted, setBooted] = useState(IS_PRERENDER)
   const handleComplete = useCallback(() => setBooted(true), [])
 
   return (
