@@ -20,6 +20,12 @@ const pillars = [
         detail: 'Discovered a character misinterpretation flaw between the clipboard and system dialpad. Certain Unicode sequences caused unexpected behavior in the dialer input parser, creating a potential injection vector. Status: Reported. Persistent.',
         tech: ['Android Internals', 'Character Encoding', 'Zero-Day Research'],
       },
+      {
+        id: 'CASE-CRUCIBLE-001', client: 'CRUCIBLE — OBSIDIAN Agent', year: '2025–2026',
+        type: 'Reasoning-Driven Offensive Security Framework', badge: 'ACTIVE', badgeClass: 'badge-active',
+        detail: 'Designed and built a reusable multi-target framework for self-directed penetration testing and adversary emulation across every owned application. Drives an agent — OBSIDIAN — as a senior offensive security operator following a structured cognitive loop (observe → orient → hypothesise → test → update → critique → pivot) rather than a static checklist. Each engagement lives as a target instance under targets/<name>/, sharing playbooks, knowledge base, scripts, and templates. Standard-aligned to OWASP WSTG / ASVS / API Top 10 / LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115, and PASTA — so findings translate cleanly to compliance and detection contexts. Built-in critique routines force the agent to ask "what am I missing?" at every phase boundary and every 30 minutes of stuck thread; pivot protocols generate alternatives systematically when blocked. Playbook coverage spans web, API, auth / identity, cloud, containers, CI/CD, microservices, mobile, LLM/AI, supply chain, source-code review, and post-exploitation.',
+        tech: ['Agentic AI Engineering', 'Claude Code (Opus)', 'OWASP WSTG / ASVS', 'OWASP API Top 10', 'OWASP LLM Top 10', 'MITRE ATT&CK', 'PTES', 'NIST 800-115', 'PASTA', 'Adversary Emulation', 'Multi-Target Engagements'],
+      },
     ],
   },
   {
