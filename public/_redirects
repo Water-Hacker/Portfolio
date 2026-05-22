@@ -1,1 +1,10 @@
+# Force canonical host (apex over www) — protects against duplicate-content SEO splits.
+https://www.thuramnana.com/*    https://thuramnana.com/:splat    301!
+http://www.thuramnana.com/*     https://thuramnana.com/:splat    301!
+http://thuramnana.com/*         https://thuramnana.com/:splat    301!
+
+# Common alternate path that some indexers try
+/index.html                     /                                301!
+
+# SPA fallback (must remain last)
 /*    /index.html   200

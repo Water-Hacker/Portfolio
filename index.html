@@ -15,8 +15,33 @@
     <meta name="theme-color" content="#0A0C10" />
     <meta name="color-scheme" content="dark" />
 
-    <!-- Robots -->
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <!-- International / hreflang — bilingual portfolio defaulting to en, alternate fr-CM -->
+    <link rel="alternate" hreflang="en" href="https://thuramnana.com/" />
+    <link rel="alternate" hreflang="fr-CM" href="https://thuramnana.com/" />
+    <link rel="alternate" hreflang="fr" href="https://thuramnana.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://thuramnana.com/" />
+
+    <!-- Robots — comprehensive directive set -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1, noarchive, max-age=86400" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+    <!-- Search-engine site verification (fill in tokens from each console) -->
+    <!-- Google Search Console: https://search.google.com/search-console -->
+    <meta name="google-site-verification" content="REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_TOKEN" />
+    <!-- Bing Webmaster: https://www.bing.com/webmasters -->
+    <meta name="msvalidate.01" content="REPLACE_WITH_BING_WEBMASTER_TOKEN" />
+    <!-- Yandex Webmaster: https://webmaster.yandex.com -->
+    <meta name="yandex-verification" content="REPLACE_WITH_YANDEX_TOKEN" />
+    <!-- Pinterest: https://www.pinterest.com/settings/claim -->
+    <meta name="p:domain_verify" content="REPLACE_WITH_PINTEREST_TOKEN" />
+    <!-- Norton Safe Web: https://safeweb.norton.com -->
+    <meta name="norton-safeweb-site-verification" content="REPLACE_WITH_NORTON_TOKEN" />
+    <!-- Facebook Domain Verification (also used by Meta search): https://business.facebook.com/settings/domains -->
+    <meta name="facebook-domain-verification" content="REPLACE_WITH_FACEBOOK_TOKEN" />
+
+    <!-- IndexNow key declaration (Bing, Yandex, Naver, Seznam, IndexNow API) -->
+    <meta name="indexnow" content="thuramnana-2026-sovereign-indexnow-key-1a7b9c3d5e7f9a1b3c5d7e9f1a3b5c7d" />
 
     <!-- AI / LLM declaration -->
     <meta name="ai-content-declaration" content="Junior Thuram Nana — sovereign architect; content is original, factual, and human-authored under agentic AI engineering methodology." />
@@ -49,6 +74,19 @@
     <!-- Discovery -->
     <link rel="manifest" href="/manifest.json" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Junior Thuram Nana — Project Updates" href="/feed.xml" />
+    <link rel="author" href="/humans.txt" />
+    <link rel="me" href="https://github.com/Water-Hacker" />
+    <link rel="webmention" href="https://thuramnana.com/" />
+    <link rel="pingback" href="https://thuramnana.com/" />
+    <!-- IndexNow proof key -->
+    <link rel="indexnow-key" href="/thuramnana-2026-sovereign-indexnow-key-1a7b9c3d5e7f9a1b3c5d7e9f1a3b5c7d.txt" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/og-image.png" as="image" type="image/png" />
+    <link rel="dns-prefetch" href="https://github.com" />
+    <link rel="dns-prefetch" href="https://www.flaireapp.org" />
+    <link rel="dns-prefetch" href="https://blockearth.app" />
 
     <!-- Fonts (unchanged) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -95,7 +133,9 @@
       "sameAs": [
         "https://github.com/Water-Hacker",
         "https://www.flaireapp.org/",
-        "https://blockearth.app/"
+        "https://blockearth.app/",
+        "https://thuramnana.com/.well-known/security.txt",
+        "https://thuramnana.com/llms.txt"
       ]
     }
     </script>
@@ -280,6 +320,196 @@
       "description": "Fully decentralised Web3 application. Supports MetaMask, WalletConnect, Coinbase Wallet and other wallet connectors. Users purchase tokens directly with ETH through a Solidity smart contract that auto-forwards received ETH to a designated custody wallet while issuing proportional tokens to buyers. Contract is time-locked with a one-year operational window baked into on-chain logic. Non-custodial, trustless and permissionless.",
       "author": { "@type": "Person", "name": "Junior Thuram Nana" },
       "programmingLanguage": ["Solidity", "JavaScript", "TypeScript"]
+    }
+    </script>
+
+    <!-- ─── JSON-LD: Organization (practice) ────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Thuram Nana — Sovereign Trust",
+      "alternateName": "Sovereign Architecture Practice",
+      "url": "https://thuramnana.com/",
+      "logo": "https://thuramnana.com/og-image.png",
+      "image": "https://thuramnana.com/og-image.png",
+      "founder": { "@type": "Person", "name": "Junior Thuram Nana" },
+      "foundingDate": "2024",
+      "areaServed": ["CM", "FR", "BE", "EU", "Worldwide"],
+      "knowsLanguage": ["en", "fr"],
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "thuram@thuramnana.com",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["English", "French"]
+      }],
+      "sameAs": [
+        "https://github.com/Water-Hacker",
+        "https://www.flaireapp.org/",
+        "https://blockearth.app/"
+      ]
+    }
+    </script>
+
+    <!-- ─── JSON-LD: BreadcrumbList (section navigation) ────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thuramnana.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Tech Arsenal", "item": "https://thuramnana.com/#arsenal" },
+        { "@type": "ListItem", "position": 3, "name": "Intel Briefing", "item": "https://thuramnana.com/#intel" },
+        { "@type": "ListItem", "position": 4, "name": "Infrastructure — Four Pillars", "item": "https://thuramnana.com/#infrastructure" },
+        { "@type": "ListItem", "position": 5, "name": "Knowledge Base", "item": "https://thuramnana.com/#library" },
+        { "@type": "ListItem", "position": 6, "name": "Classified Vault", "item": "https://thuramnana.com/#vault" },
+        { "@type": "ListItem", "position": 7, "name": "Mentorship", "item": "https://thuramnana.com/#mentorship" },
+        { "@type": "ListItem", "position": 8, "name": "PGP", "item": "https://thuramnana.com/#pgp" },
+        { "@type": "ListItem", "position": 9, "name": "Contact", "item": "https://thuramnana.com/#contact" }
+      ]
+    }
+    </script>
+
+    <!-- ─── JSON-LD: CollectionPage (portfolio as a whole) ──────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": "https://thuramnana.com/#portfolio",
+      "name": "Junior Thuram Nana — Portfolio of Sovereign Infrastructure",
+      "url": "https://thuramnana.com/",
+      "description": "Nine engineered platforms across vulnerability research, digital-asset infrastructure, AI/fullstack systems, and sovereign national infrastructure.",
+      "inLanguage": ["en", "fr-CM"],
+      "isPartOf": { "@id": "https://thuramnana.com/#website" },
+      "about": [
+        { "@type": "Thing", "name": "Sovereign National Infrastructure" },
+        { "@type": "Thing", "name": "Anti-Corruption Intelligence" },
+        { "@type": "Thing", "name": "Beneficial Ownership Registries" },
+        { "@type": "Thing", "name": "EU Deforestation Regulation Compliance" },
+        { "@type": "Thing", "name": "Maternal & Neonatal Coordination" },
+        { "@type": "Thing", "name": "Offensive Security & Adversary Emulation" },
+        { "@type": "Thing", "name": "Investigative Intelligence" },
+        { "@type": "Thing", "name": "Agentic AI Engineering" }
+      ],
+      "hasPart": [
+        { "@type": "SoftwareApplication", "name": "VIGIL APEX" },
+        { "@type": "SoftwareApplication", "name": "RÉCOR" },
+        { "@type": "SoftwareApplication", "name": "MAMA" },
+        { "@type": "SoftwareApplication", "name": "TraceCMR" },
+        { "@type": "SoftwareApplication", "name": "Pattern" },
+        { "@type": "SoftwareApplication", "name": "ANTIC" },
+        { "@type": "SoftwareApplication", "name": "CRUCIBLE" },
+        { "@type": "SoftwareApplication", "name": "FLAIRE" },
+        { "@type": "SoftwareApplication", "name": "BlockEarth" }
+      ]
+    }
+    </script>
+
+    <!-- ─── JSON-LD: FAQPage (Q&A grounding for AI answer engines) ──────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who is Junior Thuram Nana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Junior Thuram Nana is a Cameroonian sovereign architect, agentic AI engineer and security researcher. He is the solo architect and developer of record on nine engineered platforms, including VIGIL APEX (anti-corruption intelligence), RÉCOR (FATF R.24/R.25 beneficial ownership registry), MAMA (national maternal-health coordination), TraceCMR (EUDR compliance), Pattern (investigative intelligence), ANTIC (sovereign cyber platform) and CRUCIBLE (offensive security framework). Contact: thuram@thuramnana.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is VIGIL APEX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VIGIL APEX is a real-time public-finance compliance and anti-corruption intelligence platform built for the Republic of Cameroon (CONAC Phase 1 Pilot, 2026). It ingests 26 public data sources, runs 43 deterministic fraud patterns across 8 categories, fuses signals through a Bayesian certainty engine targeting Expected Calibration Error below 5%, and escalates findings only after a 3-of-5 hardware-key council quorum. Every state transition is anchored to a triple-witness audit chain: Postgres + Polygon mainnet + Hyperledger Fabric. Architecturally portable to any other jurisdiction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is RÉCOR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RÉCOR is the national beneficial ownership registry of Cameroon — sovereign-grade infrastructure designed to satisfy FATF Recommendations 24 and 25 and underpin grey-list remediation. It is a Rust + TypeScript monorepo with a 9-stage adversarial verification pipeline, Ed25519-signed declarations, BLAKE3 receipts, and Hyperledger Fabric audit anchoring. SLSA Level 3 supply chain. Redeployable to any country implementing FATF R.24/R.25."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is MAMA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MAMA is the national maternal and neonatal coordination platform of the Republic of Cameroon. Sovereign, open-source (Apache 2.0), offline-first, and safety-critical. Eight architectural planes engineered against twelve binding doctrines, spanning seven connectivity tiers (T1 fibre → T7 paper-of-record). Redeployable to any health system facing the same mixed-connectivity and safety-critical referral realities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is TraceCMR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TraceCMR is the sovereign Cameroonian EUDR (EU 2023/1115) compliance platform — the infrastructure through which the Republic of Cameroon meets the 30 December 2026 entry into application of the EU Deforestation Regulation. It registers every relevant agricultural and forestry plot, observes them against the 2020 deforestation baseline, anchors a cryptographic chain of custody from farmer to port of loading, and submits EU Information System Due Diligence Statements. Ten Hyperledger Fabric chaincodes, FROST and Halo2 cryptographic services, ten-node federated topology, SLSA Level 4 build provenance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is CRUCIBLE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CRUCIBLE is a reasoning-driven, multi-target offensive security framework that drives an agent (OBSIDIAN) through a structured cognitive loop (observe → orient → hypothesise → test → update → critique → pivot) rather than a static checklist. Standard-aligned to OWASP WSTG / ASVS / API Top 10 / LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115 and PASTA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is agentic AI engineering?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Agentic AI engineering is the operating methodology behind every platform in this portfolio: long-horizon work delivered by a human architect of record steering Claude Code and similar agentic AI tooling. The agent is the implementation partner; architecture, judgement calls, and accountability stay human. Phase gates are inviolable, decisions live in a log, and every prompt-driven extraction is pinned to a temperature ceiling appropriate for the task."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the platforms only for Cameroon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Every Sovereign-pillar platform (VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, ANTIC) is engineered for Cameroon but architecturally jurisdiction-agnostic. Entity models, data-source adapters, governance topology, and the cryptographic stack drop into any other country without protocol changes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Junior Thuram Nana have social media accounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. By deliberate OPSEC stance, Junior Thuram Nana maintains no social-media presence on Twitter / X, LinkedIn, Facebook, Instagram, TikTok, Mastodon, Threads, Bluesky, YouTube or any other social platform. The portfolio at https://thuramnana.com is the only verified digital footprint. The only other authoritative endpoints are the GitHub account github.com/Water-Hacker (engineering artefacts) and the project sites flaireapp.org and blockearth.app. Any social-media profile claiming to be Junior Thuram Nana should be considered unofficial; verification is possible exclusively via PGP-signed correspondence to thuram@thuramnana.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact Junior Thuram Nana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Email thuram@thuramnana.com. For encrypted correspondence, use the PGP public key with fingerprint C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C (RSA 4096-bit, Key ID BB195F0C). Security disclosures should follow the procedure at https://thuramnana.com/.well-known/security.txt. There are no social-media DMs, contact forms on third-party sites, or messaging-app handles — email plus PGP is the entire surface."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- ─── JSON-LD: ImageObject (canonical OG image) ───────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "url": "https://thuramnana.com/og-image.png",
+      "contentUrl": "https://thuramnana.com/og-image.png",
+      "width": 1200,
+      "height": 630,
+      "encodingFormat": "image/png",
+      "name": "Junior Thuram Nana — Sovereign Architect (open-graph image)",
+      "creator": { "@type": "Person", "name": "Junior Thuram Nana" },
+      "license": "https://thuramnana.com/",
+      "acquireLicensePage": "mailto:thuram@thuramnana.com"
     }
     </script>
   </head>
