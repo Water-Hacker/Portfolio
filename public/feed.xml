@@ -6,7 +6,7 @@
   <link href="https://thuramnana.com/" rel="alternate" type="text/html"/>
   <link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
   <id>https://thuramnana.com/</id>
-  <updated>2026-05-22T17:23:33Z</updated>
+  <updated>2026-05-22T17:43:50Z</updated>
   <icon>/favicon.svg</icon>
   <logo>/og-image.png</logo>
   <rights>© 2026 Junior Thuram Nana — All rights reserved.</rights>
@@ -22,7 +22,7 @@
     <title>AI/LLM SEO and auto-indexing surface live</title>
     <id>https://thuramnana.com/#feed-2026-05-22-seo-auto-index</id>
     <link href="https://thuramnana.com/" rel="alternate" type="text/html"/>
-    <updated>2026-05-22T17:23:33Z</updated>
+    <updated>2026-05-22T17:43:50Z</updated>
     <summary>Comprehensive AI/LLM SEO polish: 17 JSON-LD schemas, hreflang alternates, search-engine verification meta, IndexNow + PubSubHubbub + Bing URL Submission API auto-indexing pipeline, Puppeteer postbuild prerendering, RSS/Atom feed, and FAQ schema for AI answer engines.</summary>
     <category term="release"/>
     <category term="seo"/>
@@ -32,7 +32,7 @@
     <title>TraceCMR, Pattern, and ANTIC join The Sovereign pillar</title>
     <id>https://thuramnana.com/#feed-2026-05-22-sovereign-batch-2</id>
     <link href="https://thuramnana.com/#infrastructure" rel="alternate" type="text/html"/>
-    <updated>2026-05-22T17:23:33Z</updated>
+    <updated>2026-05-22T17:43:50Z</updated>
     <summary>Three additional sovereign-grade national platforms — TraceCMR (EUDR compliance), Pattern (investigative intelligence), ANTIC (sovereign cyber platform) — added to The Sovereign pillar. Cross-country portability emphasised on every platform.</summary>
     <category term="portfolio"/>
     <category term="sovereign-infrastructure"/>
@@ -42,7 +42,7 @@
     <title>CRUCIBLE — Reasoning-driven offensive security framework</title>
     <id>https://thuramnana.com/#feed-2026-05-22-crucible</id>
     <link href="https://thuramnana.com/#infrastructure" rel="alternate" type="text/html"/>
-    <updated>2026-05-22T17:23:33Z</updated>
+    <updated>2026-05-22T17:43:50Z</updated>
     <summary>CRUCIBLE / OBSIDIAN agent added to The Hunter pillar. OWASP-, MITRE ATT&amp;CK-, PTES-, NIST 800-115- and PASTA-aligned framework for self-directed penetration testing and adversary emulation.</summary>
     <category term="security"/>
     <category term="agentic-ai"/>
@@ -52,7 +52,7 @@
     <title>The Sovereign pillar — VIGIL APEX, RÉCOR, MAMA</title>
     <id>https://thuramnana.com/#feed-2026-05-22-sovereign-batch-1</id>
     <link href="https://thuramnana.com/#infrastructure" rel="alternate" type="text/html"/>
-    <updated>2026-05-22T17:23:33Z</updated>
+    <updated>2026-05-22T17:43:50Z</updated>
     <summary>The Sovereign pillar introduced with three nation-scale platforms: VIGIL APEX (real-time anti-corruption intelligence with triple-witness audit chain), RÉCOR (FATF R.24/R.25 beneficial ownership registry), MAMA (national maternal &amp; neonatal coordination platform).</summary>
     <category term="portfolio"/>
     <category term="sovereign-infrastructure"/>
