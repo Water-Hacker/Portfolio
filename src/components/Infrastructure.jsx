@@ -126,7 +126,7 @@ export default function Infrastructure() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="infrastructure" ref={ref} className="relative py-32 px-6" style={{ background: 'transparent' }}>
+    <section id="infrastructure" aria-labelledby="infra-h" ref={ref} className="relative py-32 px-6" style={{ background: 'transparent' }}>
       <div className="section-divider mb-0" />
 
       {/* Subtle grid accent */}
@@ -147,8 +147,8 @@ export default function Infrastructure() {
           transition={{ duration: 0.7, ease: EASE }}
           className="mb-20"
         >
-          <h2 className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
-            Three{' '}
+          <h2 id="infra-h" className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
+            Four{' '}
             <span
               style={{
                 background: 'linear-gradient(135deg, #D4AF37, #FFD700)',
@@ -179,7 +179,8 @@ function PillarBlock({ pillar, index, inView }) {
   const [expanded, setExpanded] = useState(null)
 
   return (
-    <motion.div
+    <motion.article
+      aria-labelledby={`pillar-${pillar.id}-h`}
       initial={{ opacity: 0, y: 40 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, delay: index * 0.15, ease: EASE }}
@@ -208,7 +209,7 @@ function PillarBlock({ pillar, index, inView }) {
         <div className="flex items-baseline gap-4">
           <span className="font-mono text-3xl" style={{ color: pillar.tagColor }}>{pillar.icon}</span>
           <div>
-            <h3 className="font-sans font-black text-3xl text-white">{pillar.title}</h3>
+            <h3 id={`pillar-${pillar.id}-h`} className="font-sans font-black text-3xl text-white">{pillar.title}</h3>
             <p className="font-mono text-xs text-[#e0e0e0]/40 tracking-widest uppercase">{pillar.subtitle}</p>
           </div>
         </div>
@@ -227,13 +228,14 @@ function PillarBlock({ pillar, index, inView }) {
           />
         ))}
       </div>
-    </motion.div>
+    </motion.article>
   )
 }
 
 function CaseCard({ caseData, index, tagColor, expanded, onToggle }) {
   return (
-    <motion.div
+    <motion.article
+      aria-labelledby={`case-${caseData.id}-h`}
       className="cursor-pointer transition-all duration-400"
       style={{
         background:    expanded
@@ -284,7 +286,7 @@ function CaseCard({ caseData, index, tagColor, expanded, onToggle }) {
         </div>
 
         {/* Type */}
-        <h4 className="font-sans font-semibold text-base text-white mb-3 leading-tight">{caseData.type}</h4>
+        <h4 id={`case-${caseData.id}-h`} className="font-sans font-semibold text-base text-white mb-3 leading-tight">{caseData.type}</h4>
 
         {/* Expand indicator */}
         <div
@@ -355,6 +357,6 @@ function CaseCard({ caseData, index, tagColor, expanded, onToggle }) {
           )}
         </AnimatePresence>
       </div>
-    </motion.div>
+    </motion.article>
   )
 }

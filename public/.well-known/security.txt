@@ -1,0 +1,8 @@
+# Security contact for thuramnana.com — RFC 9116
+# Junior Thuram Nana — Sovereign Architect & Security Researcher
+
+Contact: mailto:thuram@thuramnana.com
+Expires: 2027-05-22T00:00:00.000Z
+Encryption: https://thuramnana.com/#pgp
+Preferred-Languages: en, fr
+Canonical: https://thuramnana.com/.well-known/security.txt

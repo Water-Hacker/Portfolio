@@ -1,0 +1,94 @@
+name: auto-index
+
+# Triggers on every push to main (after the Netlify deploy lands, the
+# search engines find fresh content) plus a weekly cron as a safety net.
+#
+# Pings:
+#   1. IndexNow API (Bing, Yandex, Naver, Seznam — and any engine that joins)
+#   2. PubSubHubbub (Atom feed propagation)
+#   3. Sitemap URL submission via direct GET to engine endpoints that still
+#      honour it (most do not in 2026; included as belt-and-braces only)
+#
+# Google: the sitemap.xml link + canonical + JSON-LD shipped in index.html
+# is sufficient for Googlebot to re-index. For URL-Inspection-API-based
+# explicit submission, configure a Google Cloud service account, store its
+# JSON key in the secret GOOGLE_SEARCH_CONSOLE_SA, and uncomment the
+# submit-to-google step below.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Tuesdays 09:13 UTC — quiet hour, post-weekend crawl window
+    - cron: '13 9 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: ping IndexNow (Bing / Yandex / Naver / Seznam)
+        run: node scripts/indexnow-ping.mjs
+        env:
+          INDEXNOW_HOST: thuramnana.com
+
+      - name: ping PubSubHubbub (Atom feed propagation)
+        run: |
+          curl -fsSL --max-time 15 -X POST \
+            -d "hub.mode=publish" \
+            -d "hub.url=https://thuramnana.com/feed.xml" \
+            https://pubsubhubbub.appspot.com/ || true
+          curl -fsSL --max-time 15 -X POST \
+            -d "hub.mode=publish" \
+            -d "hub.url=https://thuramnana.com/feed.xml" \
+            https://websub.io/hub || true
+
+      - name: warm CDN cache for indexable surfaces
+        run: |
+          for path in / /robots.txt /sitemap.xml /llms.txt /llms-full.txt /feed.xml /og-image.png /.well-known/security.txt /manifest.json; do
+            curl -fsSL --max-time 15 -o /dev/null -w "[warm] %{http_code} https://thuramnana.com${path}\n" "https://thuramnana.com${path}" || true
+          done
+
+      # Optional: submit to Google Search Console URL Inspection API.
+      # Requires:
+      #   1. A Google Cloud project with Indexing API enabled (limited to
+      #      JobPosting / BroadcastEvent officially) — OR use Web Search
+      #      Console URL inspection via OAuth2.
+      #   2. Service account JSON stored as the GOOGLE_SEARCH_CONSOLE_SA secret.
+      #   3. The service account added as an Owner of the verified property
+      #      in Search Console.
+      #
+      # - name: submit to Google Search Console
+      #   if: ${{ secrets.GOOGLE_SEARCH_CONSOLE_SA != '' }}
+      #   uses: hosseinmd/google-search-console-action@v1
+      #   with:
+      #     site: 'https://thuramnana.com/'
+      #     credentials: ${{ secrets.GOOGLE_SEARCH_CONSOLE_SA }}
+      #     urls: |
+      #       https://thuramnana.com/
+
+      # Optional: Bing Webmaster Tools URL Submission API (10,000 URLs/day).
+      # Requires BING_WEBMASTER_API_KEY secret from
+      # https://www.bing.com/webmasters/url-submission-api.
+      - name: submit to Bing URL Submission API
+        if: ${{ env.BING_WEBMASTER_API_KEY != '' }}
+        env:
+          BING_WEBMASTER_API_KEY: ${{ secrets.BING_WEBMASTER_API_KEY }}
+        run: |
+          curl -fsSL --max-time 15 -X POST \
+            -H "Content-Type: application/json; charset=utf-8" \
+            "https://ssl.bing.com/webmaster/api.svc/json/SubmitUrlbatch?apikey=${BING_WEBMASTER_API_KEY}" \
+            -d '{"siteUrl":"https://thuramnana.com","urlList":["https://thuramnana.com/"]}' || true

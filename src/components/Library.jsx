@@ -57,7 +57,7 @@ export default function Library() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="library" ref={ref} className="relative py-32 px-6 terminal-grid">
+    <section id="library" aria-labelledby="library-h" ref={ref} className="relative py-32 px-6 terminal-grid">
       <div className="section-divider mb-0" />
       <div className="max-w-6xl mx-auto">
         <SectionLabel number="// 03" label="The Library" />
@@ -68,7 +68,7 @@ export default function Library() {
           transition={{ duration: 0.7, ease: EASE }}
           className="mb-20"
         >
-          <h2 className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
+          <h2 id="library-h" className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
             Knowledge{' '}
             <span
               style={{
@@ -89,8 +89,9 @@ export default function Library() {
         {/* Bento grid — 24px gap */}
         <div className="grid sm:grid-cols-2 gap-6">
           {frameworks.map((fw, i) => (
-            <motion.div
+            <motion.article
               key={fw.category}
+              aria-labelledby={`framework-${fw.category.replace(/\s+/g, '-').toLowerCase()}-h`}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.1, ease: EASE }}
@@ -127,6 +128,7 @@ export default function Library() {
                       FRAMEWORK_MODULE
                     </div>
                     <h3
+                      id={`framework-${fw.category.replace(/\s+/g, '-').toLowerCase()}-h`}
                       className="font-mono text-xs font-bold tracking-widest mt-0.5"
                       style={{ color: fw.color }}
                     >
@@ -135,9 +137,9 @@ export default function Library() {
                   </div>
                 </div>
 
-                <div className="space-y-2.5">
+                <ul role="list" className="space-y-2.5 list-none p-0 m-0">
                   {fw.items.map((item, ii) => (
-                    <motion.div
+                    <motion.li
                       key={ii}
                       initial={{ opacity: 0, x: -10 }}
                       animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -147,13 +149,14 @@ export default function Library() {
                       <span
                         className="font-mono text-[10px] mt-0.5 flex-shrink-0"
                         style={{ color: `${fw.color}50` }}
+                        aria-hidden="true"
                       >
                         &gt;
                       </span>
                       <span className="font-mono text-xs text-[#e0e0e0]/70 leading-relaxed">{item}</span>
-                    </motion.div>
+                    </motion.li>
                   ))}
-                </div>
+                </ul>
               </div>
 
               {/* Bottom corner tag */}
@@ -165,7 +168,7 @@ export default function Library() {
                   CLASSIFIED_DEPTH
                 </span>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>

@@ -57,7 +57,7 @@ export default function IntelBriefing() {
   const inView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="intel" ref={ref} className="relative py-32 px-6 terminal-grid">
+    <section id="intel" aria-labelledby="intel-h" ref={ref} className="relative py-32 px-6 terminal-grid">
       <div className="section-divider mb-0" />
 
       <div className="max-w-5xl mx-auto">
@@ -69,7 +69,7 @@ export default function IntelBriefing() {
           transition={{ duration: 0.7, ease: EASE }}
           className="mb-20"
         >
-          <h2 className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
+          <h2 id="intel-h" className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
             Timeline of{' '}
             <span
               style={{

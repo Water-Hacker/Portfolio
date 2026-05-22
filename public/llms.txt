@@ -1,0 +1,52 @@
+# Junior Thuram Nana — Sovereign Architect & Security Researcher
+
+> Solo architect and developer of record on sovereign-grade national infrastructure for Cameroon — anti-corruption intelligence (VIGIL APEX), beneficial-ownership registry (RÉCOR), maternal health coordination (MAMA), EUDR compliance (TraceCMR), investigative intelligence (Pattern), and the ANTIC sovereign cyber platform. Vulnerability researcher with disclosures at Meta/WhatsApp and Samsung. Founder of FLAIRE (AI EdTech) and BlockEarth (decentralised Web3). Delivers nation-scale platforms via disciplined agentic AI engineering under a human architect of record.
+
+## Identity
+- [Portfolio](https://thuramnana.com/): canonical and only verified digital footprint
+- [Contact](https://thuramnana.com/#contact): thuram@thuramnana.com
+- [PGP Fingerprint](https://thuramnana.com/#pgp): C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C (Key ID BB195F0C, RSA 4096)
+
+## Sovereign National Infrastructure (Cameroon)
+- [VIGIL APEX](https://thuramnana.com/#infrastructure): real-time public finance compliance and anti-corruption intelligence platform for CONAC — 26 public data sources, 43 deterministic fraud patterns, Bayesian certainty engine, 3-of-5 hardware-key council quorum, triple-witness audit chain (Postgres + Polygon mainnet + Hyperledger Fabric)
+- [RÉCOR](https://thuramnana.com/#infrastructure): national beneficial ownership registry (FATF R.24 / R.25) for the BUNEC / ARMP / ANIF / DGI / BEAC consortium — Rust + TypeScript, 9-stage adversarial verification pipeline, Ed25519 browser-signed declarations, SLSA Level 3, 24 binding engineering doctrines
+- [MAMA](https://thuramnana.com/#infrastructure): sovereign maternal and neonatal mobilization architecture for Cameroon — Apache 2.0, offline-first, eight architectural planes against twelve binding doctrines, seven connectivity tiers (T1 fibre → T7 paper-of-record), V-Model discipline
+- [TraceCMR](https://thuramnana.com/#infrastructure): sovereign EUDR compliance platform (EU 2023/1115) for MINFOF / MINADER — 10 Hyperledger Fabric chaincodes, FROST-Ed25519 threshold signing, Halo2 zero-knowledge, SLSA Level 4, co-financed by EU / GIZ / World Bank / AFD / FAO / AfDB
+- [Pattern](https://thuramnana.com/#infrastructure): classified-aware investigative indexing and analytics platform — Flask + React, FollowTheMoney fragments, content-addressed Archive, bilingual FR/EN, FROST + Halo2 cryptographic roadmap, MIT licensed
+- [ANTIC](https://thuramnana.com/#infrastructure): sovereign cyber platform for the Agence Nationale des TIC du Cameroun — agent-orchestrated build harness driving Claude Code (Opus 4.7) subagents against six volumes (~665 pages) of architectural specification toward a day-180 milestone
+
+## Vulnerability Research
+- [Meta / WhatsApp](https://thuramnana.com/#infrastructure): CASE-META-001 — iOS group permission logic bypass enabling restricted-group screenshot forwarding; patched, triggered global security policy update
+- [Samsung Mobile](https://thuramnana.com/#infrastructure): CASE-SAM-002 — character injection between clipboard and system dialpad; zero-day, persistent
+- [CRUCIBLE / OBSIDIAN](https://thuramnana.com/#infrastructure): reasoning-driven offensive security framework aligned to OWASP WSTG / ASVS / API Top 10 / LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115, PASTA
+
+## Digital Asset Infrastructure
+- [BlockEarth](https://blockearth.app/): live decentralised Web3 token sale with Solidity time-lock contract, all major wallet connections, non-custodial, trustless
+- [Escrow Protocol](https://thuramnana.com/#infrastructure): classified multi-chain escrow architecture for BTC / ETH / SOL / BNB — multi-sig, cold-storage logic, automated compliance triggers (NDA-protected)
+
+## AI & Fullstack Systems
+- [FLAIRE](https://www.flaireapp.org/): live AI-powered EdTech cross-platform app — Flutter + Dart + Firebase + Google Cloud, agentic AI curriculum pipeline
+- [GUC](https://thuramnana.com/#infrastructure): deployed school management plus social platform — full-stack engineering, university systems, admin portals
+
+## Methodology
+- [Agentic AI Engineering](https://thuramnana.com/#library): solo delivery of nation-scale platforms via disciplined orchestration of Claude Code (Opus 4.7) and specialist subagents under a human architect of record
+
+## Tech Arsenal
+- [Security Research](https://thuramnana.com/#arsenal): vulnerability research, CVE disclosure, zero-day analysis, Android internals, iOS security, OSINT
+- [Mobile & Cloud](https://thuramnana.com/#arsenal): Flutter, Dart, Firebase, Google Cloud, real-time database, cross-platform deploy
+- [Web & Fullstack](https://thuramnana.com/#arsenal): React, TypeScript, Node.js, REST APIs, Tailwind CSS, Vite, SaaS architecture
+- [Blockchain & Crypto](https://thuramnana.com/#arsenal): Solidity, Rust, smart contracts, multi-sig custody, DeFi protocols, token sale / ICO, cross-chain bridges
+- [AI & Agentic Systems](https://thuramnana.com/#arsenal): agentic AI engineering, LLM orchestration, agentic coding, AI curriculum pipelines, system logic generation
+
+## Knowledge Base
+- [OPSEC Protocols](https://thuramnana.com/#library): anonymity, signature reduction, operational security lifecycle, threat actor modeling
+- [Darknet Architecture](https://thuramnana.com/#library): decentralized P2P systems, onion routing (Tor/I2P), hidden services, adversarial traffic analysis
+- [Smart Contracts](https://thuramnana.com/#library): cross-chain liquidity, escrow logic, multi-sig flows, DeFi protocol auditing, gas optimization
+- [Systems Engineering](https://thuramnana.com/#library): polyglot engineering, Flutter / Dart cross-platform, agentic coding, professional LLM orchestration
+
+## Optional
+- [llms-full.txt](https://thuramnana.com/llms-full.txt): full LLM context document — comprehensive technical and biographical detail across every project, technology, and framework
+- [Security Contact](https://thuramnana.com/.well-known/security.txt): RFC 9116 vulnerability disclosure channel
+- [Sitemap](https://thuramnana.com/sitemap.xml): structured site index
+- [FLAIRE App](https://www.flaireapp.org/): EdTech project site
+- [BlockEarth dApp](https://blockearth.app/): Web3 token sale deployment

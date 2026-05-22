@@ -18,7 +18,7 @@ export default function Mentorship() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="mentorship" ref={ref} className="relative py-32 px-6" style={{ background: 'transparent' }}>
+    <section id="mentorship" aria-labelledby="mentorship-h" ref={ref} className="relative py-32 px-6" style={{ background: 'transparent' }}>
       <div className="section-divider mb-0" />
 
       <div className="max-w-4xl mx-auto">
@@ -30,7 +30,7 @@ export default function Mentorship() {
           transition={{ duration: 0.7, ease: EASE }}
           className="mb-16"
         >
-          <h2 className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
+          <h2 id="mentorship-h" className="font-sans font-black text-4xl sm:text-5xl text-white mb-4 leading-tight">
             Mentorship{' '}
             <span
               style={{

@@ -1,0 +1,79 @@
+# Netlify custom-headers file.
+# Cascade: site-wide rules first, then file-specific overrides.
+
+# ─── Site-wide security + indexing ─────────────────────────────────────────────
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large
+  Cross-Origin-Opener-Policy: same-origin
+
+# ─── HTML pages — short cache so SEO updates propagate fast ────────────────────
+/
+  Cache-Control: public, max-age=300, must-revalidate
+  Link: <https://thuramnana.com/>; rel="canonical"
+  Link: </sitemap.xml>; rel="sitemap"; type="application/xml"
+
+/*.html
+  Cache-Control: public, max-age=300, must-revalidate
+
+# ─── Hashed Vite assets — immutable, year-long cache ───────────────────────────
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# ─── Static SEO surfaces — short cache for fresh re-crawls ─────────────────────
+/robots.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+  X-Robots-Tag: noindex
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+  X-Robots-Tag: noindex
+
+/feed.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/atom+xml; charset=utf-8
+
+/llms.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+  X-Robots-Tag: index, follow
+
+/llms-full.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+  X-Robots-Tag: index, follow
+
+/humans.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8
+
+/.well-known/security.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8
+
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json; charset=utf-8
+
+# ─── IndexNow key proof — never index this file itself ─────────────────────────
+/*.txt
+  Cache-Control: public, max-age=86400
+
+# ─── Open Graph image — long cache, served as PNG ──────────────────────────────
+/og-image.png
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/png
+
+/og-image.svg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/svg+xml; charset=utf-8
+
+/favicon.svg
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: image/svg+xml; charset=utf-8
