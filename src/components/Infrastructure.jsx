@@ -61,6 +61,30 @@ const pillars = [
       },
     ],
   },
+  {
+    id: 'P4', number: '04', tag: 'SOVEREIGN NATIONAL INFRASTRUCTURE',
+    tagColor: '#10b981', title: 'The Sovereign', subtitle: 'Nation-scale platforms for the Republic of Cameroon', icon: '⬢',
+    cases: [
+      {
+        id: 'CASE-VIGIL-001', client: 'VIGIL APEX SAS — CONAC Phase 1 Pilot', year: '2026',
+        type: 'Real-Time Public Finance Compliance & Anti-Corruption Intelligence Platform', badge: 'SOVEREIGN', badgeClass: 'badge-sovereign',
+        detail: 'Designed and built — as solo Sovereign Architect via agentic AI engineering — a forensic pipeline that ingests 26 public data sources (procurement portals, OFAC / EU sanctions, OpenCorporates, ARMP debarments, court extracts, satellite imagery, anonymous tips), runs 43 deterministic fraud patterns across 8 categories, and fuses signals through a Bayesian certainty engine targeting Expected Calibration Error < 5%. Findings escalate only on a 3-of-5 hardware-key (YubiKey + Shamir) council quorum, then ship as a deterministic bilingual (FR/EN) GPG-signed dossier to CONAC over SFTP. Every state transition is anchored to a triple-witness audit chain: Postgres hash chain + Polygon mainnet (VIGILAnchor.sol) + Hyperledger Fabric. Production posture: HPE DL380 Gen11 cluster, Caddy active-active + keepalived VRRP VIP, PgBouncer (480 slots / 6,000 clients), Redis Sentinel, 12 HPAs + 33 PDBs + KEDA, 46 Prometheus alerts, 9 Grafana dashboards. 552 pattern unit tests. Operates on public-domain data only.',
+        tech: ['TypeScript', 'Next.js 14', 'Postgres + Drizzle', 'Neo4j', 'Redis Streams', 'Solidity', 'Polygon Mainnet', 'Hyperledger Fabric', 'Shamir Secret Sharing', 'YubiKey / FIDO2', 'Bayesian Inference', 'Anthropic Claude', 'Rasterio + STAC', 'OpenCV', 'Python', 'Rust', 'Kubernetes / Helm', 'Caddy + Keepalived', 'PgBouncer', 'KEDA', 'Prometheus + Grafana', 'Vault', 'Agentic AI Engineering'],
+      },
+      {
+        id: 'CASE-RECOR-001', client: 'RÉCOR Consortium — BUNEC / ARMP / ANIF / DGI / BEAC', year: '2026',
+        type: 'National Beneficial Ownership Registry — FATF R.24 / R.25', badge: 'SOVEREIGN', badgeClass: 'badge-sovereign',
+        detail: 'Solo architect and developer of record on the national BO registry of Cameroon — sovereign-grade infrastructure designed to satisfy FATF Recommendations 24 and 25 and underpin grey-list remediation. Rust + TypeScript monorepo with a 9-stage adversarial verification pipeline (schema parity + Ed25519 attestation → identity gates → UN/EU/OFAC sanctions → PEP screening → adverse media via Claude → graph + ML pattern detection → Dempster-Shafer cross-source fusion → stakeholder review → public consultation). Every declaration is browser-signed (Ed25519 via Web Crypto), receipted with BLAKE3, and anchored to a Hyperledger Fabric audit channel. 5 Rust services (axum + sqlx + tonic), 12 shared crates, 890+ workspace tests, 40 migrations, 21 MADR ADRs, 42 runbooks, 32 promtool-clean alerts, 10 Pyrra SLOs, 9 Grafana dashboards, 15 k6 stress scenarios, 9 Litmus chaos experiments. Defence in depth: Cloudflare/CloudFront WAF → HAProxy 2.x (TLS 1.3 AEAD, per-IP stick-tables) → SPIFFE/mTLS (rustls) → PgBouncer transaction pool → Postgres writer/reader split. 24 binding engineering doctrines block merge on violation. SLSA Level 3 supply chain: pinned tooling, hermetic builds, cosign-signed images, branch-protection-as-code.',
+        tech: ['Rust', 'TypeScript', 'axum', 'sqlx', 'tonic', 'React 19 + Vite 6', 'Tailwind v4', 'Web Crypto (Ed25519)', 'BLAKE3', 'Hyperledger Fabric', 'Dempster-Shafer Fusion', 'SPIFFE / SPIRE', 'rustls (mTLS)', 'HashiCorp Vault', 'HAProxy 2.x', 'Cloudflare + CloudFront', 'Kafka (KRaft)', 'PgBouncer', 'Redis Cluster + Sentinel', 'OpenTelemetry', 'Prometheus + Tempo + Loki', 'Pyrra SLOs', 'k6 + Litmus Chaos', 'Anthropic Claude (Tier-B)', 'SLSA Level 3', 'cosign + SBOM', 'Agentic AI Engineering'],
+      },
+      {
+        id: 'CASE-MAMA-001', client: 'République du Cameroun — National Maternal Health Coordination', year: '2026',
+        type: 'Sovereign Maternal & Neonatal Mobilization Architecture', badge: 'SOVEREIGN', badgeClass: 'badge-sovereign',
+        detail: 'Sole architect and developer of record on MAMA — the national maternal and neonatal coordination platform of Cameroon. Sovereign, open-source (Apache 2.0), offline-first, and safety-critical. Eight architectural planes engineered against twelve binding doctrines (D-01 → D-12), spanning seven connectivity tiers (T1 fibre → T7 paper-of-record) so the platform degrades gracefully from urban facilities to rural sites with no network. V-Model discipline across every service, defence-in-depth security model, end-to-end audit chain with integrity proofs, and Phase-5 acceptance gates governing every release. Designed to coordinate facility readiness, referral logistics, neonatal transport, and field-level data capture for the country\'s maternal and child health programme.',
+        tech: ['Safety-Critical Systems', 'Offline-First Architecture', 'V-Model Discipline', 'Multi-Tier Connectivity (T1–T7)', 'Audit Chain Integrity', 'Defence-in-Depth Security', 'National Coordination Platform', 'Sovereign Infrastructure', 'Apache 2.0 Open Source', 'Agentic AI Engineering'],
+      },
+    ],
+  },
 ]
 
 function SectionLabel({ number, label }) {
