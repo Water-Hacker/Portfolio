@@ -290,12 +290,12 @@ Junior discovered a character misinterpretation flaw between the clipboard and s
 
 Stack and discipline: Android Internals, Character Encoding, Zero-Day Research.
 
-### 4.3 CASE-CRUCIBLE-001 — CRUCIBLE / OBSIDIAN Agent (2025–2026)
+### 4.3 CASE-CRUCIBLE-001 — CRUCIBLE (2025–2026)
 
 - Type: Reasoning-driven offensive security framework
 - Status: ACTIVE
 
-CRUCIBLE is a reusable multi-target framework for self-directed penetration testing and adversary emulation across every owned application. It drives an agent — OBSIDIAN — as a senior offensive security operator following a structured cognitive loop: observe → orient → hypothesise → test → update → critique → pivot. Not a static checklist.
+CRUCIBLE is a reusable multi-target framework for self-directed penetration testing and adversary emulation across every owned application. It drives an offensive-security agent through a structured cognitive loop: observe → orient → hypothesise → test → update → critique → pivot. Not a static checklist.
 
 Each engagement lives as a target instance under targets/<name>/, sharing playbooks, knowledge base, scripts, and templates.
 

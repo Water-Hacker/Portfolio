@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://thuramnana.com/#person",
+      "name": "Junior Thuram Nana",
+      "alternateName": [
+        "Thuram Nana",
+        "Junior Nana",
+        "Junior Thuram",
+        "Thuram Junior Nana",
+        "Nana Junior Thuram",
+        "Thuram Junior",
+        "Nana Thuram",
+        "J. Thuram Nana",
+        "J. T. Nana",
+        "JTN",
+        "Water-Hacker",
+        "Sovereign Architect"
+      ],
+      "givenName": "Junior Thuram",
+      "familyName": "Nana",
+      "gender": "Male",
+      "nationality": { "@type": "Country", "name": "Cameroon" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CM",
+        "addressRegion": "South-West Region",
+        "addressLocality": "Buea"
+      },
+      "url": "https://thuramnana.com/",
+      "email": "thuram@thuramnana.com",
+      "image": "https://thuramnana.com/og-image.png",
+      "jobTitle": [
+        "Software Engineer",
+        "System Architect",
+        "AI Engineer",
+        "Agentic AI Engineer",
+        "LLM Engineer",
+        "Full-Stack Developer",
+        "Web3 Developer",
+        "Smart-Contract Developer",
+        "Mobile Developer (Flutter / Dart)",
+        "DevOps Engineer",
+        "Cryptography Engineer",
+        "Offensive Security Engineer",
+        "OffSec Expert",
+        "Penetration Tester",
+        "Vulnerability Researcher",
+        "Sovereign Architect"
+      ],
+      "description": "Self-taught Cameroonian software engineer, system architect, AI engineer, agentic AI engineer, LLM engineer, full-stack developer, Web3 / smart-contract developer, mobile (Flutter / Dart) engineer, DevOps engineer, cryptography engineer and offensive-security expert based in Buea, South-West Region, Cameroon. Architect of record on every system in his portfolio: VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, ANTIC, CRUCIBLE, FLAIRE, BlockEarth, and GUC (Got U Connected) for RHIBMS Buea.",
+      "disambiguatingDescription": "Distinct from the French footballers Marcus Thuram (Inter Milan striker) and Lilian Thuram (1998 FIFA World Cup winner). No family, professional or geographic connection — shared family name is coincidental. Operates in software engineering, AI, and offensive security; not in sport.",
+      "knowsHow": "Self-taught polyglot engineer. Technical expertise is the product of continuous independent exploration, primary-source research and disciplined self-study — not the product of any institutional curriculum.",
+      "knowsAbout": [
+        "Software Engineering",
+        "System Architecture",
+        "Agentic AI Engineering",
+        "Large Language Model Orchestration",
+        "Offensive Security",
+        "Vulnerability Research",
+        "Smart-Contract Development",
+        "Hyperledger Fabric",
+        "Polygon / EVM Smart Contracts",
+        "FROST Threshold Signing",
+        "Halo2 Zero-Knowledge Proofs",
+        "Ed25519 Cryptography",
+        "BLAKE3 Hashing",
+        "FATF Recommendations 24 and 25",
+        "EU Deforestation Regulation (EU 2023/1115)",
+        "Safety-Critical Offline-First Systems",
+        "Bayesian Inference",
+        "Dempster-Shafer Fusion",
+        "Kubernetes / KEDA / Helm",
+        "SLSA Levels 3 and 4 Supply-Chain Provenance"
+      ],
+      "sameAs": [
+        "https://github.com/Water-Hacker",
+        "https://www.flaireapp.org/",
+        "https://blockearth.app/",
+        "https://thuramnana.com/who-is-junior-thuram-nana.html",
+        "https://thuramnana.com/press.html",
+        "https://thuramnana.com/projects.html",
+        "https://thuramnana.com/llms.txt",
+        "https://thuramnana.com/llms-full.txt"
+      ],
+      "identifier": [
+        { "@type": "PropertyValue", "propertyID": "canonical-url", "value": "https://thuramnana.com/" },
+        { "@type": "PropertyValue", "propertyID": "github-username", "value": "Water-Hacker" },
+        { "@type": "PropertyValue", "propertyID": "pgp-fingerprint", "value": "C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C" },
+        { "@type": "PropertyValue", "propertyID": "pgp-key-id", "value": "BB195F0C" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thuramnana.com/#website",
+      "url": "https://thuramnana.com/",
+      "name": "Thuram Nana — Sovereign Trust",
+      "description": "Canonical portfolio of Junior Thuram Nana.",
+      "publisher": { "@id": "https://thuramnana.com/#person" }
+    }
+  ]
+}

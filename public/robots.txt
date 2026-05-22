@@ -148,6 +148,12 @@ Host: thuramnana.com
 # https://thuramnana.com/llms.txt
 # https://thuramnana.com/llms-full.txt
 # https://thuramnana.com/feed.xml
+# https://thuramnana.com/entity.jsonld         (machine-readable Person entity, Wikidata-ready)
+
+# Verified identity / disambiguation pages:
+# https://thuramnana.com/who-is-junior-thuram-nana.html
+# https://thuramnana.com/press.html
+# https://thuramnana.com/projects.html
 
 # ─── IndexNow proof key ────────────────────────────────────────────────
 # Bing / Yandex / Naver / Seznam fetch this URL to verify ownership before
