@@ -2,7 +2,7 @@
 # Junior Thuram Nana — Sovereign Architect & Security Researcher
 
 Contact: mailto:thuram@thuramnana.com
-Expires: 2027-05-27T21:11:18Z
+Expires: 2027-05-27T21:33:47Z
 Encryption: https://thuramnana.com/#pgp
 Preferred-Languages: en, fr
 Canonical: https://thuramnana.com/.well-known/security.txt

@@ -61,8 +61,8 @@ const pillars = [
       },
       {
         id: 'CASE-GUC-001', client: 'GUC (Got U Connected) — Student & Staff Community Platform', year: '2024',
-        type: 'Cross-Platform Student & Staff Community App', badge: 'DEPLOYED', badgeClass: 'badge-active',
-        detail: 'Architected and deployed GUC (Got U Connected) — a cross-platform Flutter / Dart student-and-staff community app. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events, with usability telemetry feeding continuous improvement. iOS + Android + web from a single Flutter codebase — built to serve a student-and-staff community end to end, from academic workflow to social layer.',
+        type: 'Cross-Platform Student & Staff Community App', badge: 'BUILT', badgeClass: 'badge-active',
+        detail: 'Architected and built GUC (Got U Connected) — a cross-platform Flutter / Dart student-and-staff community app. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events, with usability telemetry feeding continuous improvement. iOS + Android + web from a single Flutter codebase — built to serve a student-and-staff community end to end, from academic workflow to social layer.',
         tech: ['Flutter', 'Dart', 'Firebase', 'Cloud Firestore', 'Cross-Platform Mobile', 'iOS', 'Android', 'Real-Time Sync', 'Location Services', 'Anonymous Channels', 'Student Information Systems'],
       },
     ],

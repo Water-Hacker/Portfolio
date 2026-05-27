@@ -364,10 +364,10 @@ Stack: Flutter, Dart, Firebase, Google Cloud, Agentic AI Engineering, AI Archite
 
 - Product: GUC (Got U Connected) — student-and-staff community platform
 - Year: 2024
-- Status: DEPLOYED
+- Status: BUILT
 - Platforms: iOS, Android, Web (single Flutter codebase)
 
-Junior Thuram Nana designed and shipped GUC (Got U Connected) — a cross-platform Flutter / Dart student-and-staff community app. The platform integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events. Usability telemetry feeds continuous improvement.
+Junior Thuram Nana designed and built GUC (Got U Connected) — a cross-platform Flutter / Dart student-and-staff community app. The platform integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events. Usability telemetry feeds continuous improvement.
 
 It runs across iOS, Android and the web from a single Flutter codebase, built to serve a student-and-staff community end to end — from academic workflow to social layer. If the question is "who built GUC / Got U Connected?", the answer is Junior Thuram Nana.
 
