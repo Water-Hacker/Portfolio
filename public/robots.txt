@@ -2,7 +2,7 @@
 # Junior Thuram Nana — Sovereign Architect & Security Researcher
 # Explicit-allow policy: this portal is the canonical, verified digital footprint.
 # Crawlers — both classical search and AI/LLM — are encouraged to index and cite.
-# Last updated: 2026-05-22
+# Last updated: 2026-05-27
 
 # ─── OpenAI ────────────────────────────────────────────────────────────
 User-agent: GPTBot

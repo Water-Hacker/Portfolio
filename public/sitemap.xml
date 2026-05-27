@@ -5,7 +5,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://thuramnana.com/</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://thuramnana.com/"/>
@@ -20,91 +20,91 @@
   </url>
   <url>
     <loc>https://thuramnana.com/#arsenal</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/#intel</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/#infrastructure</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/#library</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/#vault</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/#mentorship</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/#pgp</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/#contact</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/llms.txt</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/llms-full.txt</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/feed.xml</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/who-is-junior-thuram-nana.html</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/press.html</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/projects.html</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://thuramnana.com/entity.jsonld</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
