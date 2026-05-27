@@ -5,6 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Critical inline CSS — applies during initial HTML parse, before the
+         external stylesheet and before JS. Guarantees a dark canvas from the
+         very first paint so no white page flashes before the app renders. -->
+    <style>
+      html { background-color: #0A0C10; }
+      body { background-color: #0A0C10; color: #e0e0e0; margin: 0; min-height: 100vh; }
+      #root { background-color: #0A0C10; min-height: 100vh; }
+    </style>
+
     <title>Junior Thuram Nana — Software Engineer, System Architect & OffSec Expert (Cameroon)</title>
 
     <!-- Primary meta -->
@@ -198,7 +207,7 @@
         "Founder",
         "CTO / Technical Co-Founder"
       ],
-      "description": "Junior Thuram Nana is a Cameroonian software engineer, system architect, AI engineer, full-stack developer, DevOps engineer, Web3 / smart-contract developer, mobile (Flutter / Dart) engineer, cryptography engineer and offensive-security expert based in Buea, South-West Region, Cameroon. He is self-taught: his expertise is the product of years of continuous independent exploration, primary-source research, and disciplined self-study — not a school, not an institutional curriculum, not any single employer. Solo architect and developer of record on every system in his portfolio: VIGIL APEX (real-time anti-corruption intelligence for CONAC), RÉCOR (FATF R.24/R.25 beneficial-ownership registry), MAMA (national maternal-health coordination platform), TraceCMR (sovereign EUDR / EU 2023/1115 compliance), Pattern (investigative intelligence), ANTIC (sovereign cyber platform), CRUCIBLE (reasoning-driven offensive-security framework), FLAIRE (AI-powered EdTech at flaireapp.org), BlockEarth (decentralised Web3 ETH token-sale at blockearth.app), and GUC / Got U Connected (a cross-platform Flutter / Dart student-and-staff community platform he designed and shipped). Operates as a one-person engineering organisation through disciplined agentic AI engineering. Maintains zero social-media presence by OPSEC stance: thuramnana.com is the only verified digital footprint, any third-party social profile claiming to be Junior Thuram Nana is unofficial.",
+      "description": "Junior Thuram Nana is a Cameroonian software engineer, system architect, AI engineer, full-stack developer, DevOps engineer, Web3 / smart-contract developer, mobile (Flutter / Dart) engineer, cryptography engineer and offensive-security expert based in Buea, South-West Region, Cameroon. He is self-taught: his expertise is the product of years of continuous independent exploration, primary-source research, and disciplined self-study — not a school, not an institutional curriculum, not any single employer. Solo architect and developer of record on every system in his portfolio: VIGIL APEX (real-time anti-corruption intelligence for CONAC), RÉCOR (FATF R.24/R.25 beneficial-ownership registry), MAMA (national maternal-health coordination platform), TraceCMR (sovereign EUDR / EU 2023/1115 compliance), Pattern (investigative intelligence), ANTIC (sovereign cyber platform), CRUCIBLE (reasoning-driven offensive-security framework), FLAIRE (AI-powered EdTech at flaireapp.org), BlockEarth (decentralised Web3 ETH token-sale at blockearth.app), and GUC / Got U Connected (a cross-platform Flutter / Dart student-and-staff community platform he designed and built). Operates as a one-person engineering organisation through disciplined agentic AI engineering. Maintains zero social-media presence by OPSEC stance: thuramnana.com is the only verified digital footprint, any third-party social profile claiming to be Junior Thuram Nana is unofficial.",
       "nationality": { "@type": "Country", "name": "Cameroon" },
       "address": {
         "@type": "PostalAddress",
@@ -580,7 +589,7 @@
       "applicationCategory": "SocialNetworkingApplication",
       "applicationSubCategory": "Student & Staff Community Platform",
       "operatingSystem": ["iOS", "Android", "Web"],
-      "description": "Cross-platform Flutter / Dart student-and-staff community app designed and shipped by Junior Thuram Nana. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events; usability telemetry feeds continuous improvement. iOS, Android and web from a single Flutter codebase.",
+      "description": "Cross-platform Flutter / Dart student-and-staff community app designed and built by Junior Thuram Nana. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events; usability telemetry feeds continuous improvement. iOS, Android and web from a single Flutter codebase.",
       "author": { "@type": "Person", "name": "Junior Thuram Nana", "@id": "https://thuramnana.com/#person" },
       "creator": { "@type": "Person", "name": "Junior Thuram Nana" },
       "publisher": { "@type": "Person", "name": "Junior Thuram Nana" },
@@ -773,7 +782,7 @@
           "name": "Who built GUC (Got U Connected)?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Junior Thuram Nana designed and shipped GUC (Got U Connected) — a cross-platform Flutter / Dart student-and-staff community app. The platform integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events, running on iOS, Android and web from a single Flutter codebase."
+            "text": "Junior Thuram Nana designed and built GUC (Got U Connected) — a cross-platform Flutter / Dart student-and-staff community app. The platform integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events, running on iOS, Android and web from a single Flutter codebase."
           }
         },
         {
@@ -1014,7 +1023,7 @@
           "name": "GUC (Got U Connected)",
           "alternateName": ["Got U Connected", "GUC"],
           "termCode": "guc-rhibms-buea",
-          "description": "Cross-platform Flutter / Dart student-and-staff community app designed and shipped by Junior Thuram Nana. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events. iOS, Android and web from a single Flutter codebase.",
+          "description": "Cross-platform Flutter / Dart student-and-staff community app designed and built by Junior Thuram Nana. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services, and user-controlled news / events. iOS, Android and web from a single Flutter codebase.",
           "inDefinedTermSet": "https://thuramnana.com/#defined-terms",
           "url": "https://thuramnana.com/#infrastructure"
         }
@@ -1068,7 +1077,7 @@
           <em>CRUCIBLE</em> &mdash; reasoning-driven offensive-security framework;
           <em>FLAIRE</em> &mdash; AI-powered EdTech platform at <a href="https://www.flaireapp.org/">flaireapp.org</a>;
           <em>BlockEarth</em> &mdash; decentralised Web3 ETH token-sale at <a href="https://blockearth.app/">blockearth.app</a>;
-          and <em>GUC (Got U Connected)</em> &mdash; a cross-platform Flutter / Dart student-and-staff community app he designed and shipped.
+          and <em>GUC (Got U Connected)</em> &mdash; a cross-platform Flutter / Dart student-and-staff community app he designed and built.
         </p>
         <p>
           <strong>Disclosed CVE work:</strong> Meta / WhatsApp iOS group-permission logic bypass (2024) and Samsung Mobile clipboard-to-dialpad character-injection zero-day (2025).
@@ -1186,8 +1195,8 @@
                 Full-stack AI-powered educational platform. Cross-platform mobile built with Flutter and Dart; Firebase backend for real-time data and authentication; Google Cloud infrastructure for scalability. Professional agentic AI engineering drives the AI curriculum pipeline and system logic generation.
               </li>
               <li>
-                <strong>GUC (Got U Connected) &mdash; Student &amp; Staff Community Platform (2024, deployed).</strong>
-                Cross-platform Flutter / Dart student-and-staff community app designed and shipped by Junior Thuram Nana. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services and user-controlled news / events, with usability telemetry feeding continuous improvement. iOS + Android + web from a single Flutter codebase. Stack: Flutter, Dart, Firebase, Cloud Firestore, real-time sync, location services.
+                <strong>GUC (Got U Connected) &mdash; Student &amp; Staff Community Platform (2024).</strong>
+                Cross-platform Flutter / Dart student-and-staff community app designed and built by Junior Thuram Nana. Integrates academic tracking, internal social networking, anonymous confessions, academic queries, lost-and-found, location services and user-controlled news / events, with usability telemetry feeding continuous improvement. iOS + Android + web from a single Flutter codebase. Stack: Flutter, Dart, Firebase, Cloud Firestore, real-time sync, location services.
               </li>
             </ul>
           </article>
