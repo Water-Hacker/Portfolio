@@ -82,7 +82,7 @@ The fourth pillar — Sovereign — comprises six nation-scale platforms. All ar
 ### 3.1 VIGIL APEX — Real-Time Public Finance Compliance & Anti-Corruption Intelligence Platform
 
 - Client: VIGIL APEX — Sovereign Anti-Corruption Intelligence
-- Year: 2026
+- Year: 2025–2026
 - Status: SOVEREIGN — in development
 - Role: solo Sovereign Architect via agentic AI engineering
 
@@ -113,7 +113,7 @@ Stack: TypeScript, Next.js 14, Postgres + Drizzle, Neo4j, Redis Streams, Solidit
 ### 3.2 RÉCOR — National Beneficial Ownership Registry
 
 - Client: RÉCOR — Sovereign Beneficial Ownership Registry
-- Year: 2026
+- Year: 2024–2026
 - Status: SOVEREIGN
 - Role: solo architect and developer of record
 
@@ -210,7 +210,7 @@ Ring 5 — ten-node federated topology with FROST-Ed25519 threshold quorum on co
 
 Build provenance: Nix-pinned floor, Sigstore-signed artefacts, SLSA Level 4 build provenance.
 
-Timeline: Cocoa MVP Q3 2026; full multi-commodity coverage Q4 2026.
+Roadmap: cocoa MVP Q3 2026; full multi-commodity coverage Q4 2026.
 
 Built for Cameroon, redeployable to any EUDR-affected exporter state: every Ring 4 institutional adapter (TRACES-NT, ASYCUDA, CITES, GS1) is country-neutral by spec, and the federated topology + supply graph are pluggable.
 
@@ -221,10 +221,11 @@ Stack: Hyperledger Fabric, Connect-Go, Kafka + Flink + Temporal, Flutter (offlin
 - Client: Pattern — Sovereign Investigative Intelligence
 - Year: 2025–2026
 - Status: SOVEREIGN
-- Role: sole maintainer
+- Role: maintainer of the Pattern fork
+- Upstream: OCCRP Aleph (MIT) — https://github.com/alephdata/aleph
 - License: MIT
 
-Pattern is a sovereign investigative intelligence platform. It indexes large bodies of structured and unstructured material — documents, data tables, registries, leaks — and makes them searchable and analysable by a human intelligence team, operating under a classified-data classification regime.
+Pattern is a sovereign investigative intelligence platform built on OCCRP Aleph (MIT). It indexes large bodies of structured and unstructured material — documents, data tables, registries, leaks — and makes them searchable and analysable by a human intelligence team, operating under a classified-data classification regime.
 
 It pairs a classification-aware UI (provenance badges, classification banners, sealed-state indicators) with a typed entity model, cryptographic provenance for every artefact, and a bilingual French-English interface.
 
@@ -261,7 +262,7 @@ Stack and discipline: iOS Security, Group Permission Logic, Responsible Disclosu
 ### 4.2 CASE-SAM-002 — Samsung Mobile (2025)
 
 - Type: Character injection — clipboard-to-dialpad
-- Status: ZERO-DAY, reported, persistent
+- Status: ZERO-DAY — reported to Samsung in 2025 under coordinated disclosure; not yet patched
 
 Junior discovered a character misinterpretation flaw between the clipboard and system dialpad. Certain Unicode sequences caused unexpected behavior in the dialer input parser, creating a potential vector for unexpected contact activation or URI interpretation.
 

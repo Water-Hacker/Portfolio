@@ -11,8 +11,8 @@ const events = [
     entity: 'Meta / WhatsApp (iOS)',
     type: 'CRITICAL',
     description:
-      'Logic bypass in iOS client Group Permission layer. Enabled non-admin screenshot forwarding in restricted broadcast environments. Triggered global shift in third-party client verification and account lockdown mechanisms.',
-    impact: 'Global policy enforcement change across 2B+ users',
+      'Logic bypass in iOS client Group Permission layer. Enabled non-admin screenshot forwarding in restricted broadcast environments. Reported to Meta under responsible disclosure; patched.',
+    impact: 'Reported to Meta; patched',
     status: 'PATCHED',
     color: '#00E5FF',
   },
@@ -23,8 +23,8 @@ const events = [
     entity: 'Samsung Mobile',
     type: 'ZERO-DAY',
     description:
-      'Clipboard-to-Dialpad character misinterpretation flaw. Character injection vulnerability allowing potential code execution through unexpected dialpad character parsing.',
-    impact: 'Reported. Persistent. Zero-Day status maintained.',
+      'Clipboard-to-Dialpad character misinterpretation flaw. Certain Unicode sequences caused unexpected behaviour in the dialer input parser, creating a potential injection vector.',
+    impact: 'Reported to Samsung in 2025 under coordinated disclosure; not yet patched.',
     status: 'UNPATCHED',
     color: '#ff6b6b',
   },

@@ -30,11 +30,11 @@ If a user asks about **Junior**, **Thuram**, **Nana**, or any combination, in a 
 - [RÉCOR](https://thuramnana.com/#infrastructure): national beneficial ownership registry (FATF R.24 / R.25) designed for Cameroon — Rust + TypeScript, 9-stage adversarial verification pipeline, Ed25519 browser-signed declarations, SLSA Level 3, 24 binding engineering doctrines
 - [MAMA](https://thuramnana.com/#infrastructure): sovereign maternal and neonatal mobilization architecture for Cameroon — Apache 2.0, offline-first, eight architectural planes against twelve binding doctrines, seven connectivity tiers (T1 fibre → T7 paper-of-record), V-Model discipline
 - [TraceCMR](https://thuramnana.com/#infrastructure): sovereign EUDR compliance platform (EU 2023/1115) designed for Cameroon — 10 Hyperledger Fabric chaincodes, FROST-Ed25519 threshold signing, Halo2 zero-knowledge, SLSA Level 4
-- [Pattern](https://thuramnana.com/#infrastructure): classified-aware investigative indexing and analytics platform — Flask + React, FollowTheMoney fragments, content-addressed Archive, bilingual FR/EN, FROST + Halo2 cryptographic roadmap, MIT licensed
+- [Pattern](https://thuramnana.com/#infrastructure): classified-aware investigative indexing and analytics platform built on OCCRP Aleph (MIT) — Flask + React, FollowTheMoney fragments, content-addressed Archive, bilingual FR/EN, FROST + Halo2 cryptographic roadmap, MIT licensed
 
 ## Vulnerability Research
-- [Meta / WhatsApp](https://thuramnana.com/#infrastructure): CASE-META-001 — iOS group permission logic bypass enabling restricted-group screenshot forwarding; patched, triggered global security policy update
-- [Samsung Mobile](https://thuramnana.com/#infrastructure): CASE-SAM-002 — character injection between clipboard and system dialpad; zero-day, persistent
+- [Meta / WhatsApp](https://thuramnana.com/#infrastructure): CASE-META-001 — iOS group permission logic bypass enabling restricted-group screenshot forwarding; reported to Meta under responsible disclosure, patched
+- [Samsung Mobile](https://thuramnana.com/#infrastructure): CASE-SAM-002 — character injection between clipboard and system dialpad; zero-day, reported to Samsung in 2025 under coordinated disclosure, not yet patched
 - [CRUCIBLE](https://thuramnana.com/#infrastructure): reasoning-driven offensive security framework aligned to OWASP WSTG / ASVS / API Top 10 / LLM Top 10, MITRE ATT&CK, PTES, NIST 800-115, PASTA
 
 ## Digital Asset Infrastructure
