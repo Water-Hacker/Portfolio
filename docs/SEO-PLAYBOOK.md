@@ -15,7 +15,7 @@ This document is the **external action plan** — the work only you can do.
 | **Submit a Wikidata entry** for "Junior Thuram Nana" | Single highest-leverage action. Feeds Google Knowledge Graph in 2–8 weeks. Without this, you cannot earn a Knowledge Panel. | Go to https://www.wikidata.org/, log in, click Create new item. Use the data from `/entity.jsonld` directly. You need at least 2 independent citations — press, conference talks, GitHub stars, anything published outside your domain. Cite https://thuramnana.com/who-is-junior-thuram-nana.html as the canonical reference. |
 | **Verify all search consoles** | Each verified property gives Google / Bing / Yandex stronger entity signals. | Search the codebase for `REPLACE_WITH_*_TOKEN`, drop in each token from the corresponding console. Submit the sitemap once in each. |
 | **Claim Google Business / Bing Places profile** (no public address required — virtual / Buea-Cameroon scope) | Anchors you in local-pack results. Even without a storefront, you can list "Service" mode. | https://www.google.com/business/ and https://www.bingplaces.com/. Use Buea, Cameroon as service area. Category: "Software company" or "Consultant". |
-| **GitHub profile README expansion** | github.com is DA 98. Every link from your profile is high-authority. | Edit https://github.com/Water-Hacker — add a comprehensive README pointing at thuramnana.com, /press.html, /projects.html. List every project. Use the same name-variant addressing. |
+| **GitHub profile README expansion** | github.com is DA 98. Every link from your profile is high-authority. | Edit https://github.com/thuram-nana — add a comprehensive README pointing at thuramnana.com, /press.html, /projects.html. List every project. Use the same name-variant addressing. |
 | **Pin every public repo with README links to thuramnana.com** | Each repo README is an indexable backlink. | For every public repo, add an "About the author" section at the bottom: link to thuramnana.com, list the canonical name. |
 
 ### Weeks 3–6 — build citation surface
@@ -23,7 +23,7 @@ This document is the **external action plan** — the work only you can do.
 | Task | Why | How |
 |---|---|---|
 | **Cross-publish 3–5 technical articles** on dev.to, Medium, Hashnode | Each platform has DA 90+. With `rel=canonical` pointing back to thuramnana.com, the authority transfers to you. | Write deep technical pieces about agentic AI engineering, the VIGIL APEX architecture, the CRUCIBLE methodology, the FROST / Halo2 deployment pattern. Each post: 1500+ words, `rel=canonical` to a thuramnana.com URL, byline "Junior Thuram Nana". |
-| **Submit to GitHub Trending categories** | Trending repos earn organic backlinks from aggregators. | Pin Water-Hacker repos that demonstrate the engineering depth. Write substantive READMEs. |
+| **Submit to GitHub Trending categories** | Trending repos earn organic backlinks from aggregators. | Pin thuram-nana repos that demonstrate the engineering depth. Write substantive READMEs. |
 | **Comment on landmark engineering threads** with substantive contributions | Earns nofollow backlinks but trains Google's NER on your name → engineering context. | StackOverflow, HackerNews, Lobste.rs, /r/programming. Always sign with the name + thuramnana.com link in your profile. |
 | **Submit conference talk proposals** | Conference pages have high authority. Even rejected proposals sometimes get listed. | DEF CON CFP, FOSDEM, ETHCC, AfricaSec, Africa Open Source, BSides. CFPs are open continuously. |
 

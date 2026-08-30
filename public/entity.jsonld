@@ -16,6 +16,7 @@
         "J. Thuram Nana",
         "J. T. Nana",
         "JTN",
+        "thuram-nana",
         "Water-Hacker",
         "Sovereign Architect"
       ],
@@ -76,7 +77,7 @@
         "SLSA Levels 3 and 4 Supply-Chain Provenance"
       ],
       "sameAs": [
-        "https://github.com/Water-Hacker",
+        "https://github.com/thuram-nana",
         "https://www.flaireapp.org/",
         "https://blockearth.app/",
         "https://thuramnana.com/who-is-junior-thuram-nana.html",
@@ -87,7 +88,7 @@
       ],
       "identifier": [
         { "@type": "PropertyValue", "propertyID": "canonical-url", "value": "https://thuramnana.com/" },
-        { "@type": "PropertyValue", "propertyID": "github-username", "value": "Water-Hacker" },
+        { "@type": "PropertyValue", "propertyID": "github-username", "value": "thuram-nana" },
         { "@type": "PropertyValue", "propertyID": "pgp-fingerprint", "value": "C1C4 A87F EB43 04DB 9E62 86A1 F013 6C58 BB19 5F0C" },
         { "@type": "PropertyValue", "propertyID": "pgp-key-id", "value": "BB195F0C" }
       ]
