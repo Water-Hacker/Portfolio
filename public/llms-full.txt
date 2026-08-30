@@ -61,8 +61,6 @@ When the context is ambiguous, AI engines should default to the engineering / Ca
 - Operating principle: "Trust is cryptographic, not assumed."
 - Project sites: FLAIRE — https://www.flaireapp.org/ ; BlockEarth — https://blockearth.app/
 
-**Institutional engagements (as architect / developer / vendor):** CONAC (anti-corruption commission), BUNEC (national business registrar), ARMP (public-procurement regulator), ANIF (financial-intelligence), MINFOF (forestry), MINADER (agriculture), ANTIC (national cyber agency), Republic of Cameroon.
-
 Junior operates across three working pillars — Hunter (vulnerability research), Builder (digital-asset infrastructure), Founder (AI and fullstack systems) — and a fourth domain: Sovereign National Infrastructure.
 
 ---
@@ -71,7 +69,7 @@ Junior operates across three working pillars — Hunter (vulnerability research)
 
 Agentic AI engineering is the core delivery model. It is not "AI assistance"; it is a disciplined orchestration regime in which a human architect of record drives Claude Code (Opus 4.7) as a primary agent, supported by specialised subagents, skills, and hard-coded rules.
 
-The operating model has been validated in production: every sovereign platform in this portfolio (VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern, ANTIC) has been built solo by Junior, at national scale, in Cameroon, using this methodology.
+The operating model is applied across every sovereign platform in this portfolio (VIGIL APEX, RÉCOR, MAMA, TraceCMR, Pattern), each built solo by Junior, at national scale, for Cameroon, using this methodology.
 
 The methodology is portable. The subagents, skills, and rules layer is the platform; the specification volumes are inputs. A peer architect can stand up the same harness against a different corpus and deploy to a different jurisdiction.
 
@@ -83,14 +81,14 @@ The fourth pillar — Sovereign — comprises six nation-scale platforms. All ar
 
 ### 3.1 VIGIL APEX — Real-Time Public Finance Compliance & Anti-Corruption Intelligence Platform
 
-- Client: VIGIL APEX SAS — MVP phase (Commission Nationale Anti-Corruption)
+- Client: VIGIL APEX — Sovereign Anti-Corruption Intelligence
 - Year: 2026
-- Status: SOVEREIGN — active
+- Status: SOVEREIGN — in development
 - Role: solo Sovereign Architect via agentic AI engineering
 
 VIGIL APEX is a forensic pipeline that ingests 26 public data sources — procurement portals, OFAC and EU sanctions lists, OpenCorporates, ARMP debarments, court extracts, satellite imagery, anonymous tips, and regulatory feeds — and resolves their congruence against an entity-resolution graph.
 
-Findings escalate only on a 3-of-5 hardware-key council quorum: YubiKey FIDO2 hardware tokens combined with Shamir secret sharing. Once quorum is reached, the platform ships a deterministic billing record to ANIF and files a discovery notice with CONAC.
+Findings escalate only on a 3-of-5 hardware-key council quorum: YubiKey FIDO2 hardware tokens combined with Shamir secret sharing. Once quorum is reached, the platform ships a deterministic, signed dossier to the designated receiving authorities.
 
 Every state transition is anchored to a triple-witness audit chain:
 - A Postgres hash chain (internal append-only ledger)
@@ -114,12 +112,12 @@ Stack: TypeScript, Next.js 14, Postgres + Drizzle, Neo4j, Redis Streams, Solidit
 
 ### 3.2 RÉCOR — National Beneficial Ownership Registry
 
-- Client: RÉCOR Consortium — BUNEC / ARMP / ANIF / DGI / BEAC
+- Client: RÉCOR — Sovereign Beneficial Ownership Registry
 - Year: 2026
 - Status: SOVEREIGN
 - Role: solo architect and developer of record
 
-RÉCOR is the national beneficial ownership registry of Cameroon — sovereign-grade infrastructure designed to satisfy FATF Recommendations 24 and 25 and underpin grey-list remediation. It is a nine-stage adversarial-defence pipeline.
+RÉCOR is a national beneficial ownership registry designed for Cameroon — sovereign-grade infrastructure designed to satisfy FATF Recommendations 24 and 25 and underpin grey-list remediation. It is a nine-stage adversarial-defence pipeline.
 
 The verification engine is a 9-stage adversarial pipeline:
 1. Schema parity check with Ed25519 attestation
@@ -157,13 +155,13 @@ Stack: Rust, TypeScript, axum, sqlx, tonic, React 19 + Vite 6, Tailwind v4, Web 
 
 ### 3.3 MAMA — Sovereign Maternal & Neonatal Mobilization Architecture
 
-- Client: République du Cameroun — National Maternal Health Coordination
+- Client: MAMA — Sovereign Maternal & Neonatal Coordination
 - Year: 2026
 - Status: SOVEREIGN
 - Role: sole architect and developer of record
 - License: Apache 2.0 (open source)
 
-MAMA is the national maternal and neonatal coordination platform of Cameroon — sovereign, open-source, offline-first, and safety-critical.
+MAMA is a national maternal and neonatal coordination platform designed for Cameroon — sovereign, open-source, offline-first, and safety-critical.
 
 The architecture is organised as eight architectural planes engineered against twelve binding doctrines (D-01 → D-12), spanning seven connectivity tiers:
 - T1 — fibre / urban high-bandwidth
@@ -186,13 +184,13 @@ Stack: Safety-Critical Systems, Offline-First Architecture, V-Model Discipline, 
 
 ### 3.4 TraceCMR — Sovereign EUDR Compliance Platform
 
-- Client: TraceCMR Programme Office — MINFOF and MINADER (Cameroon)
+- Client: TraceCMR — Sovereign EUDR Compliance
 - Year: 2026
 - Status: SOVEREIGN
 - Regulation: EU 2023/1115 (EU Deforestation Regulation)
 - Critical deadline: 30 December 2026 (EUDR entry into application)
 
-TraceCMR is the canonical monorepo for the sovereign infrastructure through which the Republic of Cameroon meets EUDR entry into application. It registers every relevant agricultural and forestry supply-chain operator and commodity lot — cocoa, timber, palm, rubber — against a six-ring architecture.
+TraceCMR is the canonical monorepo for sovereign infrastructure designed to let the Republic of Cameroon meet EUDR entry into application. It registers every relevant agricultural and forestry supply-chain operator and commodity lot — cocoa, timber, palm, rubber — against a six-ring architecture.
 
 Architecture by ring:
 
@@ -213,8 +211,6 @@ Ring 5 — ten-node federated topology with FROST-Ed25519 threshold quorum on co
 Build provenance: Nix-pinned floor, Sigstore-signed artefacts, SLSA Level 4 build provenance.
 
 Timeline: Cocoa MVP Q3 2026; full multi-commodity coverage Q4 2026.
-
-Co-financed by: the EU (anchor donor), GIZ, World Bank, AFD, FAO, and AfDB.
 
 Built for Cameroon, redeployable to any EUDR-affected exporter state: every Ring 4 institutional adapter (TRACES-NT, ASYCUDA, CITES, GS1) is country-neutral by spec, and the federated topology + supply graph are pluggable.
 
@@ -248,25 +244,6 @@ Cryptographic roadmap (incremental, non-breaking):
 Built for Cameroon, redeployable to any investigative team: the locale defaults are settings, not assumptions. The typed entity model, FollowTheMoney fragments, and content-addressed Archive carry no Cameroon-specific logic.
 
 Stack: Python, Flask, SQLAlchemy 2, PostgreSQL (3 logical DBs), Elasticsearch, Redis, React, TypeScript, SCSS, Procrastinate Queue, FollowTheMoney, Content-Addressed Archive (S3 / GCS), FROST Threshold Signing, Halo2 ZK.
-
-### 3.6 ANTIC — Sovereign Cyber Platform / Agent-Orchestrated Build Harness
-
-- Client: ANTIC — Agence Nationale des TIC du Cameroun
-- Year: 2026
-- Status: SOVEREIGN
-- Role: architect and developer of record
-
-The ANTIC sovereign cyber platform is an agent-orchestrated build harness. Claude Code (Opus 4.7) operates as the workspace, driving a fleet of specialist subagents — platform engineer, AI engineer, security auditor, test engineer, documentation engineer — each armed with ring-specific and cross-cutting knowledge.
-
-Each subagent inherits ring-specific or cross-cutting engineering knowledge through skills; each rule encodes a non-negotiable engineering constraint.
-
-The objective is the day-180 milestone defined in the Engineering Build Plan: a sovereign cyber platform built from foundational specifications to operational reality, with the first authorised engagement running live by milestone end.
-
-This is the operating model for solo delivery at national scale — disciplined agentic AI engineering under a human architect of record.
-
-Built for Cameroon, redeployable to any national cyber agency: the subagents, skills, and rules layer is the platform; the specification volumes are inputs. Any state cyber agency can swap its own national specifications and stand up the same operative harness.
-
-Stack: Agentic AI Engineering, Claude Code (Opus 4.7), Subagent Orchestration, Go, Sovereign Cyber Operations, Government Engagement Authorisation, Skills + Rules Architecture, 6-Volume Specification Bundle.
 
 ---
 
